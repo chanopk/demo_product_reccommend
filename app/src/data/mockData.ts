@@ -16,8 +16,8 @@ export const mockCustomers: Customer[] = [
     "birthDate": "1964-06-22",
     "gender": "F",
     "maritalStatus": "Married",
-    "occupationCode": "1",
-    "occupation": "1",
+    "occupationCode": "120",
+    "occupation": "เกษียณ",
     "educationCode": "7",
     "education": "7",
     "riskScore": 1,
@@ -57,18 +57,18 @@ export const mockCustomers: Customer[] = [
     "cashFlow": [
       {
         "month": "Oct",
-        "inflow": 40407,
-        "outflow": 23622
+        "inflow": 49411,
+        "outflow": 22580
       },
       {
         "month": "Nov",
-        "inflow": 40615,
-        "outflow": 16247
+        "inflow": 30350,
+        "outflow": 21195
       },
       {
         "month": "Dec",
-        "inflow": 49025,
-        "outflow": 25393
+        "inflow": 46608,
+        "outflow": 27420
       }
     ]
   },
@@ -87,8 +87,8 @@ export const mockCustomers: Customer[] = [
     "birthDate": "1984-06-10",
     "gender": "M",
     "maritalStatus": "Married",
-    "occupationCode": "5",
-    "occupation": "5",
+    "occupationCode": "60",
+    "occupation": "กิจการครอบครัว",
     "educationCode": "7",
     "education": "7",
     "riskScore": 1,
@@ -133,18 +133,18 @@ export const mockCustomers: Customer[] = [
     "cashFlow": [
       {
         "month": "Oct",
-        "inflow": 1085921,
-        "outflow": 522920
+        "inflow": 1142402,
+        "outflow": 570932
       },
       {
         "month": "Nov",
-        "inflow": 1085310,
-        "outflow": 526353
+        "inflow": 1306160,
+        "outflow": 887714
       },
       {
         "month": "Dec",
-        "inflow": 1386531,
-        "outflow": 600808
+        "inflow": 1056558,
+        "outflow": 628772
       }
     ]
   },
@@ -163,8 +163,8 @@ export const mockCustomers: Customer[] = [
     "birthDate": "1987-04-27",
     "gender": "M",
     "maritalStatus": "Single",
-    "occupationCode": "4",
-    "occupation": "4",
+    "occupationCode": "40",
+    "occupation": "พนักงานบริษัท",
     "educationCode": "8",
     "education": "8",
     "riskScore": 1,
@@ -209,18 +209,18 @@ export const mockCustomers: Customer[] = [
     "cashFlow": [
       {
         "month": "Oct",
-        "inflow": 224227,
-        "outflow": 92483
+        "inflow": 206396,
+        "outflow": 105118
       },
       {
         "month": "Nov",
-        "inflow": 325174,
-        "outflow": 175428
+        "inflow": 410018,
+        "outflow": 230367
       },
       {
         "month": "Dec",
-        "inflow": 447865,
-        "outflow": 237732
+        "inflow": 181804,
+        "outflow": 93712
       }
     ]
   },
@@ -239,8 +239,8 @@ export const mockCustomers: Customer[] = [
     "birthDate": "1984-02-12",
     "gender": "M",
     "maritalStatus": "Married",
-    "occupationCode": "42",
-    "occupation": "นักบริหาร (อาชีพรับจ้างบริหาร)",
+    "occupationCode": "150",
+    "occupation": "อาชีพอิสระ",
     "educationCode": "7",
     "education": "7",
     "riskScore": 1,
@@ -285,18 +285,18 @@ export const mockCustomers: Customer[] = [
     "cashFlow": [
       {
         "month": "Oct",
-        "inflow": 305731,
-        "outflow": 188130
+        "inflow": 206165,
+        "outflow": 106534
       },
       {
         "month": "Nov",
-        "inflow": 193980,
-        "outflow": 90503
+        "inflow": 341194,
+        "outflow": 196416
       },
       {
         "month": "Dec",
-        "inflow": 264020,
-        "outflow": 142815
+        "inflow": 291679,
+        "outflow": 171156
       }
     ]
   },
@@ -315,8 +315,8 @@ export const mockCustomers: Customer[] = [
     "birthDate": "1985-08-09",
     "gender": "F",
     "maritalStatus": "Single",
-    "occupationCode": "4",
-    "occupation": "4",
+    "occupationCode": "40",
+    "occupation": "พนักงานบริษัท",
     "educationCode": "8",
     "education": "8",
     "riskScore": 1,
@@ -361,18 +361,18 @@ export const mockCustomers: Customer[] = [
     "cashFlow": [
       {
         "month": "Oct",
-        "inflow": 95195,
-        "outflow": 61589
+        "inflow": 86409,
+        "outflow": 60304
       },
       {
         "month": "Nov",
-        "inflow": 89630,
-        "outflow": 38554
+        "inflow": 93691,
+        "outflow": 51287
       },
       {
         "month": "Dec",
-        "inflow": 96052,
-        "outflow": 42475
+        "inflow": 72652,
+        "outflow": 43723
       }
     ]
   },
@@ -391,8 +391,8 @@ export const mockCustomers: Customer[] = [
     "birthDate": "1989-01-07",
     "gender": "F",
     "maritalStatus": "Single",
-    "occupationCode": "3",
-    "occupation": "3",
+    "occupationCode": "90",
+    "occupation": "นักลงทุน",
     "educationCode": "8",
     "education": "8",
     "riskScore": 1,
@@ -437,18 +437,18 @@ export const mockCustomers: Customer[] = [
     "cashFlow": [
       {
         "month": "Oct",
-        "inflow": 86120,
-        "outflow": 39475
+        "inflow": 83122,
+        "outflow": 39320
       },
       {
         "month": "Nov",
-        "inflow": 84428,
-        "outflow": 35238
+        "inflow": 65867,
+        "outflow": 43304
       },
       {
         "month": "Dec",
-        "inflow": 98928,
-        "outflow": 63150
+        "inflow": 77031,
+        "outflow": 44139
       }
     ]
   },
@@ -467,8 +467,8 @@ export const mockCustomers: Customer[] = [
     "birthDate": "1991-11-18",
     "gender": "F",
     "maritalStatus": "Single",
-    "occupationCode": "4",
-    "occupation": "4",
+    "occupationCode": "40",
+    "occupation": "พนักงานบริษัท",
     "educationCode": "7",
     "education": "7",
     "riskScore": 1,
@@ -513,18 +513,18 @@ export const mockCustomers: Customer[] = [
     "cashFlow": [
       {
         "month": "Oct",
-        "inflow": 17090,
-        "outflow": 11954
+        "inflow": 17834,
+        "outflow": 8912
       },
       {
         "month": "Nov",
-        "inflow": 25429,
-        "outflow": 17247
+        "inflow": 22839,
+        "outflow": 12398
       },
       {
         "month": "Dec",
-        "inflow": 17963,
-        "outflow": 9808
+        "inflow": 19145,
+        "outflow": 10675
       }
     ]
   },
@@ -543,8 +543,8 @@ export const mockCustomers: Customer[] = [
     "birthDate": "1984-03-11",
     "gender": "M",
     "maritalStatus": "Married",
-    "occupationCode": "4",
-    "occupation": "4",
+    "occupationCode": "40",
+    "occupation": "พนักงานบริษัท",
     "educationCode": "7",
     "education": "7",
     "riskScore": 1,
@@ -589,18 +589,18 @@ export const mockCustomers: Customer[] = [
     "cashFlow": [
       {
         "month": "Oct",
-        "inflow": 30960,
-        "outflow": 12596
+        "inflow": 31689,
+        "outflow": 16358
       },
       {
         "month": "Nov",
-        "inflow": 35876,
-        "outflow": 22440
+        "inflow": 36684,
+        "outflow": 24112
       },
       {
         "month": "Dec",
-        "inflow": 34774,
-        "outflow": 22542
+        "inflow": 34229,
+        "outflow": 14394
       }
     ]
   },
@@ -619,8 +619,8 @@ export const mockCustomers: Customer[] = [
     "birthDate": "1979-07-01",
     "gender": "F",
     "maritalStatus": "Married",
-    "occupationCode": "4",
-    "occupation": "4",
+    "occupationCode": "40",
+    "occupation": "พนักงานบริษัท",
     "educationCode": "7",
     "education": "7",
     "riskScore": 1,
@@ -665,18 +665,18 @@ export const mockCustomers: Customer[] = [
     "cashFlow": [
       {
         "month": "Oct",
-        "inflow": 49196,
-        "outflow": 33201
+        "inflow": 35976,
+        "outflow": 18514
       },
       {
         "month": "Nov",
-        "inflow": 38492,
-        "outflow": 18837
+        "inflow": 47767,
+        "outflow": 24342
       },
       {
         "month": "Dec",
-        "inflow": 37845,
-        "outflow": 21942
+        "inflow": 40605,
+        "outflow": 26566
       }
     ]
   },
@@ -695,8 +695,8 @@ export const mockCustomers: Customer[] = [
     "birthDate": "1974-06-23",
     "gender": "M",
     "maritalStatus": "Single",
-    "occupationCode": "4",
-    "occupation": "4",
+    "occupationCode": "40",
+    "occupation": "พนักงานบริษัท",
     "educationCode": "7",
     "education": "7",
     "riskScore": 1,
@@ -741,18 +741,18 @@ export const mockCustomers: Customer[] = [
     "cashFlow": [
       {
         "month": "Oct",
-        "inflow": 39754,
-        "outflow": 16577
+        "inflow": 41003,
+        "outflow": 23606
       },
       {
         "month": "Nov",
-        "inflow": 46467,
-        "outflow": 23129
+        "inflow": 45770,
+        "outflow": 28683
       },
       {
         "month": "Dec",
-        "inflow": 34933,
-        "outflow": 19747
+        "inflow": 35654,
+        "outflow": 22337
       }
     ]
   },
@@ -771,8 +771,8 @@ export const mockCustomers: Customer[] = [
     "birthDate": "1971-08-16",
     "gender": "F",
     "maritalStatus": "Married",
-    "occupationCode": "5",
-    "occupation": "5",
+    "occupationCode": "60",
+    "occupation": "กิจการครอบครัว",
     "educationCode": "",
     "education": "",
     "riskScore": 1,
@@ -817,18 +817,18 @@ export const mockCustomers: Customer[] = [
     "cashFlow": [
       {
         "month": "Oct",
-        "inflow": 1201777,
-        "outflow": 828716
+        "inflow": 1491338,
+        "outflow": 667832
       },
       {
         "month": "Nov",
-        "inflow": 1484428,
-        "outflow": 797562
+        "inflow": 1352988,
+        "outflow": 854586
       },
       {
         "month": "Dec",
-        "inflow": 1054514,
-        "outflow": 461331
+        "inflow": 1249453,
+        "outflow": 662860
       }
     ]
   },
@@ -847,8 +847,8 @@ export const mockCustomers: Customer[] = [
     "birthDate": "1967-03-08",
     "gender": "F",
     "maritalStatus": "Single",
-    "occupationCode": "44",
-    "occupation": "เกษียณ",
+    "occupationCode": "90",
+    "occupation": "นักลงทุน",
     "educationCode": "",
     "education": "",
     "riskScore": 1,
@@ -893,18 +893,18 @@ export const mockCustomers: Customer[] = [
     "cashFlow": [
       {
         "month": "Oct",
-        "inflow": 98802,
-        "outflow": 58542
+        "inflow": 62223,
+        "outflow": 38478
       },
       {
         "month": "Nov",
-        "inflow": 85044,
-        "outflow": 45950
+        "inflow": 98861,
+        "outflow": 68928
       },
       {
         "month": "Dec",
-        "inflow": 90764,
-        "outflow": 50434
+        "inflow": 78239,
+        "outflow": 45912
       }
     ]
   },
@@ -923,8 +923,8 @@ export const mockCustomers: Customer[] = [
     "birthDate": "1969-01-22",
     "gender": "M",
     "maritalStatus": "Married",
-    "occupationCode": "4",
-    "occupation": "4",
+    "occupationCode": "40",
+    "occupation": "พนักงานบริษัท",
     "educationCode": "8",
     "education": "8",
     "riskScore": 1,
@@ -969,18 +969,18 @@ export const mockCustomers: Customer[] = [
     "cashFlow": [
       {
         "month": "Oct",
-        "inflow": 178151,
-        "outflow": 119329
+        "inflow": 122570,
+        "outflow": 82008
       },
       {
         "month": "Nov",
-        "inflow": 406608,
-        "outflow": 275981
+        "inflow": 432114,
+        "outflow": 174710
       },
       {
         "month": "Dec",
-        "inflow": 303761,
-        "outflow": 199504
+        "inflow": 435781,
+        "outflow": 253831
       }
     ]
   },
@@ -999,8 +999,8 @@ export const mockCustomers: Customer[] = [
     "birthDate": "1978-02-21",
     "gender": "M",
     "maritalStatus": "Single",
-    "occupationCode": "5",
-    "occupation": "5",
+    "occupationCode": "60",
+    "occupation": "กิจการครอบครัว",
     "educationCode": "",
     "education": "",
     "riskScore": 1,
@@ -1045,18 +1045,18 @@ export const mockCustomers: Customer[] = [
     "cashFlow": [
       {
         "month": "Oct",
-        "inflow": 431694,
-        "outflow": 295038
+        "inflow": 266871,
+        "outflow": 146468
       },
       {
         "month": "Nov",
-        "inflow": 479292,
-        "outflow": 314513
+        "inflow": 267969,
+        "outflow": 152793
       },
       {
         "month": "Dec",
-        "inflow": 396354,
-        "outflow": 224629
+        "inflow": 399115,
+        "outflow": 262983
       }
     ]
   },
@@ -1075,8 +1075,8 @@ export const mockCustomers: Customer[] = [
     "birthDate": "1975-08-15",
     "gender": "F",
     "maritalStatus": "Single",
-    "occupationCode": "4",
-    "occupation": "4",
+    "occupationCode": "40",
+    "occupation": "พนักงานบริษัท",
     "educationCode": "8",
     "education": "8",
     "riskScore": 1,
@@ -1121,18 +1121,18 @@ export const mockCustomers: Customer[] = [
     "cashFlow": [
       {
         "month": "Oct",
-        "inflow": 208279,
-        "outflow": 121593
+        "inflow": 160415,
+        "outflow": 102997
       },
       {
         "month": "Nov",
-        "inflow": 104003,
-        "outflow": 47652
+        "inflow": 335266,
+        "outflow": 159056
       },
       {
         "month": "Dec",
-        "inflow": 391564,
-        "outflow": 176275
+        "inflow": 491152,
+        "outflow": 201491
       }
     ]
   },
@@ -1151,8 +1151,8 @@ export const mockCustomers: Customer[] = [
     "birthDate": "1968-09-04",
     "gender": "M",
     "maritalStatus": "Single",
-    "occupationCode": "44",
-    "occupation": "เกษียณ",
+    "occupationCode": "80",
+    "occupation": "แม่บ้าน/พ่อบ้าน",
     "educationCode": "",
     "education": "",
     "riskScore": 1,
@@ -1197,18 +1197,18 @@ export const mockCustomers: Customer[] = [
     "cashFlow": [
       {
         "month": "Oct",
-        "inflow": 102624,
-        "outflow": 44143
+        "inflow": 471235,
+        "outflow": 295531
       },
       {
         "month": "Nov",
-        "inflow": 445128,
-        "outflow": 197912
+        "inflow": 395477,
+        "outflow": 270317
       },
       {
         "month": "Dec",
-        "inflow": 125321,
-        "outflow": 76673
+        "inflow": 209194,
+        "outflow": 143531
       }
     ]
   },
@@ -1227,8 +1227,8 @@ export const mockCustomers: Customer[] = [
     "birthDate": "1961-11-20",
     "gender": "M",
     "maritalStatus": "Married",
-    "occupationCode": "4",
-    "occupation": "4",
+    "occupationCode": "40",
+    "occupation": "พนักงานบริษัท",
     "educationCode": "7",
     "education": "7",
     "riskScore": 1,
@@ -1273,18 +1273,18 @@ export const mockCustomers: Customer[] = [
     "cashFlow": [
       {
         "month": "Oct",
-        "inflow": 97797,
-        "outflow": 67815
+        "inflow": 92116,
+        "outflow": 61147
       },
       {
         "month": "Nov",
-        "inflow": 57790,
-        "outflow": 40066
+        "inflow": 70984,
+        "outflow": 44235
       },
       {
         "month": "Dec",
-        "inflow": 71288,
-        "outflow": 31347
+        "inflow": 86852,
+        "outflow": 37025
       }
     ]
   },
@@ -1303,8 +1303,8 @@ export const mockCustomers: Customer[] = [
     "birthDate": "1971-10-31",
     "gender": "F",
     "maritalStatus": "Married",
-    "occupationCode": "79",
-    "occupation": "เลขานุการ",
+    "occupationCode": "50",
+    "occupation": "แพทย์/พยาบาล",
     "educationCode": "7",
     "education": "7",
     "riskScore": 1,
@@ -1349,18 +1349,18 @@ export const mockCustomers: Customer[] = [
     "cashFlow": [
       {
         "month": "Oct",
-        "inflow": 79651,
-        "outflow": 43144
+        "inflow": 79577,
+        "outflow": 47019
       },
       {
         "month": "Nov",
-        "inflow": 79248,
-        "outflow": 33066
+        "inflow": 62464,
+        "outflow": 30236
       },
       {
         "month": "Dec",
-        "inflow": 65398,
-        "outflow": 35060
+        "inflow": 67287,
+        "outflow": 30579
       }
     ]
   },
@@ -1379,8 +1379,8 @@ export const mockCustomers: Customer[] = [
     "birthDate": "1983-03-03",
     "gender": "F",
     "maritalStatus": "Single",
-    "occupationCode": "27",
-    "occupation": "แพทย์",
+    "occupationCode": "30",
+    "occupation": "เจ้าของกิจการ",
     "educationCode": "8",
     "education": "8",
     "riskScore": 1,
@@ -1425,18 +1425,18 @@ export const mockCustomers: Customer[] = [
     "cashFlow": [
       {
         "month": "Oct",
-        "inflow": 205643,
-        "outflow": 141934
+        "inflow": 319873,
+        "outflow": 190780
       },
       {
         "month": "Nov",
-        "inflow": 296242,
-        "outflow": 130226
+        "inflow": 282012,
+        "outflow": 114280
       },
       {
         "month": "Dec",
-        "inflow": 483138,
-        "outflow": 222628
+        "inflow": 350739,
+        "outflow": 172838
       }
     ]
   },
@@ -1455,8 +1455,8 @@ export const mockCustomers: Customer[] = [
     "birthDate": "1979-06-22",
     "gender": "M",
     "maritalStatus": "Single",
-    "occupationCode": "3",
-    "occupation": "3",
+    "occupationCode": "30",
+    "occupation": "เจ้าของกิจการ",
     "educationCode": "6",
     "education": "6",
     "riskScore": 1,
@@ -1496,18 +1496,18 @@ export const mockCustomers: Customer[] = [
     "cashFlow": [
       {
         "month": "Oct",
-        "inflow": 47382,
-        "outflow": 21044
+        "inflow": 47855,
+        "outflow": 23440
       },
       {
         "month": "Nov",
-        "inflow": 41619,
-        "outflow": 23235
+        "inflow": 34556,
+        "outflow": 15860
       },
       {
         "month": "Dec",
-        "inflow": 32114,
-        "outflow": 14735
+        "inflow": 42999,
+        "outflow": 19464
       }
     ]
   },
@@ -1526,8 +1526,8 @@ export const mockCustomers: Customer[] = [
     "birthDate": "1972-06-12",
     "gender": "M",
     "maritalStatus": "Married",
-    "occupationCode": "5",
-    "occupation": "5",
+    "occupationCode": "60",
+    "occupation": "กิจการครอบครัว",
     "educationCode": "",
     "education": "",
     "riskScore": 1,
@@ -1567,18 +1567,18 @@ export const mockCustomers: Customer[] = [
     "cashFlow": [
       {
         "month": "Oct",
-        "inflow": 486456,
-        "outflow": 326524
+        "inflow": 447631,
+        "outflow": 231260
       },
       {
         "month": "Nov",
-        "inflow": 310985,
-        "outflow": 168323
+        "inflow": 311699,
+        "outflow": 161046
       },
       {
         "month": "Dec",
-        "inflow": 368066,
-        "outflow": 193189
+        "inflow": 493808,
+        "outflow": 339152
       }
     ]
   },
@@ -1597,8 +1597,8 @@ export const mockCustomers: Customer[] = [
     "birthDate": "1975-12-16",
     "gender": "F",
     "maritalStatus": "Single",
-    "occupationCode": "3",
-    "occupation": "3",
+    "occupationCode": "80",
+    "occupation": "แม่บ้าน/พ่อบ้าน",
     "educationCode": "7",
     "education": "7",
     "riskScore": 1,
@@ -1643,18 +1643,18 @@ export const mockCustomers: Customer[] = [
     "cashFlow": [
       {
         "month": "Oct",
-        "inflow": 422370,
-        "outflow": 202245
+        "inflow": 230377,
+        "outflow": 122870
       },
       {
         "month": "Nov",
-        "inflow": 383892,
-        "outflow": 218551
+        "inflow": 492241,
+        "outflow": 249891
       },
       {
         "month": "Dec",
-        "inflow": 151209,
-        "outflow": 90647
+        "inflow": 348271,
+        "outflow": 161972
       }
     ]
   },
@@ -1673,8 +1673,8 @@ export const mockCustomers: Customer[] = [
     "birthDate": "1970-07-09",
     "gender": "F",
     "maritalStatus": "Single",
-    "occupationCode": "5",
-    "occupation": "5",
+    "occupationCode": "60",
+    "occupation": "กิจการครอบครัว",
     "educationCode": "",
     "education": "",
     "riskScore": 1,
@@ -1719,18 +1719,18 @@ export const mockCustomers: Customer[] = [
     "cashFlow": [
       {
         "month": "Oct",
-        "inflow": 375425,
-        "outflow": 203512
+        "inflow": 277403,
+        "outflow": 150005
       },
       {
         "month": "Nov",
-        "inflow": 476657,
-        "outflow": 206209
+        "inflow": 251470,
+        "outflow": 104150
       },
       {
         "month": "Dec",
-        "inflow": 280291,
-        "outflow": 131145
+        "inflow": 225360,
+        "outflow": 95544
       }
     ]
   },
@@ -1749,8 +1749,8 @@ export const mockCustomers: Customer[] = [
     "birthDate": "1966-03-11",
     "gender": "F",
     "maritalStatus": "Married",
-    "occupationCode": "5",
-    "occupation": "5",
+    "occupationCode": "60",
+    "occupation": "กิจการครอบครัว",
     "educationCode": "8",
     "education": "8",
     "riskScore": 1,
@@ -1790,18 +1790,18 @@ export const mockCustomers: Customer[] = [
     "cashFlow": [
       {
         "month": "Oct",
-        "inflow": 92795,
-        "outflow": 59695
+        "inflow": 83137,
+        "outflow": 43507
       },
       {
         "month": "Nov",
-        "inflow": 81453,
-        "outflow": 50982
+        "inflow": 72338,
+        "outflow": 37994
       },
       {
         "month": "Dec",
-        "inflow": 98243,
-        "outflow": 51272
+        "inflow": 75878,
+        "outflow": 37630
       }
     ]
   },
@@ -1820,8 +1820,8 @@ export const mockCustomers: Customer[] = [
     "birthDate": "1949-01-20",
     "gender": "F",
     "maritalStatus": "Married",
-    "occupationCode": "5",
-    "occupation": "5",
+    "occupationCode": "60",
+    "occupation": "กิจการครอบครัว",
     "educationCode": "7",
     "education": "7",
     "riskScore": 1,
@@ -1866,18 +1866,18 @@ export const mockCustomers: Customer[] = [
     "cashFlow": [
       {
         "month": "Oct",
-        "inflow": 63708,
-        "outflow": 34249
+        "inflow": 81543,
+        "outflow": 55848
       },
       {
         "month": "Nov",
-        "inflow": 75433,
-        "outflow": 48404
+        "inflow": 56567,
+        "outflow": 26765
       },
       {
         "month": "Dec",
-        "inflow": 68882,
-        "outflow": 35752
+        "inflow": 50539,
+        "outflow": 27599
       }
     ]
   },
@@ -1896,8 +1896,8 @@ export const mockCustomers: Customer[] = [
     "birthDate": "1977-09-20",
     "gender": "M",
     "maritalStatus": "Single",
-    "occupationCode": "5",
-    "occupation": "5",
+    "occupationCode": "60",
+    "occupation": "กิจการครอบครัว",
     "educationCode": "7",
     "education": "7",
     "riskScore": 1,
@@ -1942,18 +1942,18 @@ export const mockCustomers: Customer[] = [
     "cashFlow": [
       {
         "month": "Oct",
-        "inflow": 262116,
-        "outflow": 123834
+        "inflow": 449071,
+        "outflow": 275960
       },
       {
         "month": "Nov",
-        "inflow": 256744,
-        "outflow": 146250
+        "inflow": 150775,
+        "outflow": 82327
       },
       {
         "month": "Dec",
-        "inflow": 178926,
-        "outflow": 78776
+        "inflow": 137547,
+        "outflow": 91903
       }
     ]
   },
@@ -1972,8 +1972,8 @@ export const mockCustomers: Customer[] = [
     "birthDate": "1979-05-29",
     "gender": "F",
     "maritalStatus": "Single",
-    "occupationCode": "27",
-    "occupation": "แพทย์",
+    "occupationCode": "110",
+    "occupation": "นักการเมือง",
     "educationCode": "",
     "education": "",
     "riskScore": 1,
@@ -2018,18 +2018,18 @@ export const mockCustomers: Customer[] = [
     "cashFlow": [
       {
         "month": "Oct",
-        "inflow": 62567,
-        "outflow": 42533
+        "inflow": 73189,
+        "outflow": 40941
       },
       {
         "month": "Nov",
-        "inflow": 91353,
-        "outflow": 55057
+        "inflow": 63721,
+        "outflow": 38639
       },
       {
         "month": "Dec",
-        "inflow": 76409,
-        "outflow": 34593
+        "inflow": 96513,
+        "outflow": 44012
       }
     ]
   },
@@ -2048,8 +2048,8 @@ export const mockCustomers: Customer[] = [
     "birthDate": "1974-03-23",
     "gender": "M",
     "maritalStatus": "Single",
-    "occupationCode": "26",
-    "occupation": "เภสัชกร",
+    "occupationCode": "50",
+    "occupation": "แพทย์/พยาบาล",
     "educationCode": "",
     "education": "",
     "riskScore": 1,
@@ -2094,18 +2094,18 @@ export const mockCustomers: Customer[] = [
     "cashFlow": [
       {
         "month": "Oct",
-        "inflow": 59006,
-        "outflow": 34130
+        "inflow": 53977,
+        "outflow": 27430
       },
       {
         "month": "Nov",
-        "inflow": 59740,
-        "outflow": 39697
+        "inflow": 78025,
+        "outflow": 32712
       },
       {
         "month": "Dec",
-        "inflow": 71157,
-        "outflow": 31390
+        "inflow": 95088,
+        "outflow": 61617
       }
     ]
   },
@@ -2124,8 +2124,8 @@ export const mockCustomers: Customer[] = [
     "birthDate": "1970-03-19",
     "gender": "F",
     "maritalStatus": "Single",
-    "occupationCode": "4",
-    "occupation": "4",
+    "occupationCode": "40",
+    "occupation": "พนักงานบริษัท",
     "educationCode": "8",
     "education": "8",
     "riskScore": 1,
@@ -2170,18 +2170,18 @@ export const mockCustomers: Customer[] = [
     "cashFlow": [
       {
         "month": "Oct",
-        "inflow": 322609,
-        "outflow": 143182
+        "inflow": 206254,
+        "outflow": 113944
       },
       {
         "month": "Nov",
-        "inflow": 248439,
-        "outflow": 108961
+        "inflow": 494723,
+        "outflow": 244241
       },
       {
         "month": "Dec",
-        "inflow": 217814,
-        "outflow": 120160
+        "inflow": 274323,
+        "outflow": 121655
       }
     ]
   },
@@ -2200,8 +2200,8 @@ export const mockCustomers: Customer[] = [
     "birthDate": "1969-07-02",
     "gender": "F",
     "maritalStatus": "Married",
-    "occupationCode": "4",
-    "occupation": "4",
+    "occupationCode": "40",
+    "occupation": "พนักงานบริษัท",
     "educationCode": "7",
     "education": "7",
     "riskScore": 1,
@@ -2246,18 +2246,18 @@ export const mockCustomers: Customer[] = [
     "cashFlow": [
       {
         "month": "Oct",
-        "inflow": 98723,
-        "outflow": 51483
+        "inflow": 77361,
+        "outflow": 34240
       },
       {
         "month": "Nov",
-        "inflow": 89020,
-        "outflow": 46911
+        "inflow": 51327,
+        "outflow": 24890
       },
       {
         "month": "Dec",
-        "inflow": 95783,
-        "outflow": 55137
+        "inflow": 75244,
+        "outflow": 40030
       }
     ]
   },
@@ -2276,8 +2276,8 @@ export const mockCustomers: Customer[] = [
     "birthDate": "1982-01-04",
     "gender": "F",
     "maritalStatus": "Married",
-    "occupationCode": "6",
-    "occupation": "6",
+    "occupationCode": "170",
+    "occupation": "อื่นๆ",
     "educationCode": "7",
     "education": "7",
     "riskScore": 1,
@@ -2322,18 +2322,18 @@ export const mockCustomers: Customer[] = [
     "cashFlow": [
       {
         "month": "Oct",
-        "inflow": 359077,
-        "outflow": 197297
+        "inflow": 472532,
+        "outflow": 195742
       },
       {
         "month": "Nov",
-        "inflow": 296319,
-        "outflow": 168252
+        "inflow": 430247,
+        "outflow": 173081
       },
       {
         "month": "Dec",
-        "inflow": 379545,
-        "outflow": 256714
+        "inflow": 337244,
+        "outflow": 146027
       }
     ]
   },
@@ -2352,8 +2352,8 @@ export const mockCustomers: Customer[] = [
     "birthDate": "1953-09-11",
     "gender": "M",
     "maritalStatus": "Married",
-    "occupationCode": "5",
-    "occupation": "5",
+    "occupationCode": "60",
+    "occupation": "กิจการครอบครัว",
     "educationCode": "6",
     "education": "6",
     "riskScore": 1,
@@ -2398,18 +2398,18 @@ export const mockCustomers: Customer[] = [
     "cashFlow": [
       {
         "month": "Oct",
-        "inflow": 408054,
-        "outflow": 242842
+        "inflow": 477079,
+        "outflow": 288944
       },
       {
         "month": "Nov",
-        "inflow": 462864,
-        "outflow": 200616
+        "inflow": 210090,
+        "outflow": 108091
       },
       {
         "month": "Dec",
-        "inflow": 306569,
-        "outflow": 189874
+        "inflow": 405553,
+        "outflow": 174944
       }
     ]
   },
@@ -2428,8 +2428,8 @@ export const mockCustomers: Customer[] = [
     "birthDate": "1957-06-11",
     "gender": "F",
     "maritalStatus": "Single",
-    "occupationCode": "44",
-    "occupation": "เกษียณ",
+    "occupationCode": "20",
+    "occupation": "เกษตรกร",
     "educationCode": "8",
     "education": "8",
     "riskScore": 1,
@@ -2474,18 +2474,18 @@ export const mockCustomers: Customer[] = [
     "cashFlow": [
       {
         "month": "Oct",
-        "inflow": 62407,
-        "outflow": 41606
+        "inflow": 60339,
+        "outflow": 27318
       },
       {
         "month": "Nov",
-        "inflow": 51459,
-        "outflow": 25246
+        "inflow": 80813,
+        "outflow": 43706
       },
       {
         "month": "Dec",
-        "inflow": 50367,
-        "outflow": 33153
+        "inflow": 85847,
+        "outflow": 39830
       }
     ]
   },
@@ -2504,8 +2504,8 @@ export const mockCustomers: Customer[] = [
     "birthDate": "1964-11-23",
     "gender": "F",
     "maritalStatus": "Single",
-    "occupationCode": "4",
-    "occupation": "4",
+    "occupationCode": "40",
+    "occupation": "พนักงานบริษัท",
     "educationCode": "8",
     "education": "8",
     "riskScore": 1,
@@ -2550,18 +2550,18 @@ export const mockCustomers: Customer[] = [
     "cashFlow": [
       {
         "month": "Oct",
-        "inflow": 468909,
-        "outflow": 266551
+        "inflow": 426438,
+        "outflow": 201026
       },
       {
         "month": "Nov",
-        "inflow": 328236,
-        "outflow": 134781
+        "inflow": 328516,
+        "outflow": 146619
       },
       {
         "month": "Dec",
-        "inflow": 141000,
-        "outflow": 90980
+        "inflow": 285668,
+        "outflow": 122512
       }
     ]
   },
@@ -2580,8 +2580,8 @@ export const mockCustomers: Customer[] = [
     "birthDate": "1976-10-21",
     "gender": "F",
     "maritalStatus": "Single",
-    "occupationCode": "5",
-    "occupation": "5",
+    "occupationCode": "60",
+    "occupation": "กิจการครอบครัว",
     "educationCode": "8",
     "education": "8",
     "riskScore": 1,
@@ -2626,18 +2626,18 @@ export const mockCustomers: Customer[] = [
     "cashFlow": [
       {
         "month": "Oct",
-        "inflow": 571940,
-        "outflow": 266294
+        "inflow": 683162,
+        "outflow": 439023
       },
       {
         "month": "Nov",
-        "inflow": 599852,
-        "outflow": 309188
+        "inflow": 961144,
+        "outflow": 466384
       },
       {
         "month": "Dec",
-        "inflow": 722791,
-        "outflow": 474140
+        "inflow": 901779,
+        "outflow": 522781
       }
     ]
   },
@@ -2656,8 +2656,8 @@ export const mockCustomers: Customer[] = [
     "birthDate": "1978-04-30",
     "gender": "F",
     "maritalStatus": "Married",
-    "occupationCode": "4",
-    "occupation": "4",
+    "occupationCode": "40",
+    "occupation": "พนักงานบริษัท",
     "educationCode": "7",
     "education": "7",
     "riskScore": 1,
@@ -2702,18 +2702,18 @@ export const mockCustomers: Customer[] = [
     "cashFlow": [
       {
         "month": "Oct",
-        "inflow": 118278,
-        "outflow": 69702
+        "inflow": 256273,
+        "outflow": 152602
       },
       {
         "month": "Nov",
-        "inflow": 243953,
-        "outflow": 126288
+        "inflow": 335093,
+        "outflow": 169605
       },
       {
         "month": "Dec",
-        "inflow": 133774,
-        "outflow": 65092
+        "inflow": 292499,
+        "outflow": 172040
       }
     ]
   },
@@ -2732,8 +2732,8 @@ export const mockCustomers: Customer[] = [
     "birthDate": "1973-07-15",
     "gender": "M",
     "maritalStatus": "Married",
-    "occupationCode": "3",
-    "occupation": "3",
+    "occupationCode": "130",
+    "occupation": "พนักงานรัฐวิสาหกิจ",
     "educationCode": "",
     "education": "",
     "riskScore": 1,
@@ -2778,18 +2778,18 @@ export const mockCustomers: Customer[] = [
     "cashFlow": [
       {
         "month": "Oct",
-        "inflow": 180158,
-        "outflow": 112126
+        "inflow": 389776,
+        "outflow": 232152
       },
       {
         "month": "Nov",
-        "inflow": 293262,
-        "outflow": 123069
+        "inflow": 145016,
+        "outflow": 84528
       },
       {
         "month": "Dec",
-        "inflow": 174974,
-        "outflow": 111879
+        "inflow": 467818,
+        "outflow": 289462
       }
     ]
   },
@@ -2808,8 +2808,8 @@ export const mockCustomers: Customer[] = [
     "birthDate": "1981-02-09",
     "gender": "F",
     "maritalStatus": "Single",
-    "occupationCode": "4",
-    "occupation": "4",
+    "occupationCode": "40",
+    "occupation": "พนักงานบริษัท",
     "educationCode": "8",
     "education": "8",
     "riskScore": 1,
@@ -2854,18 +2854,18 @@ export const mockCustomers: Customer[] = [
     "cashFlow": [
       {
         "month": "Oct",
-        "inflow": 60555,
-        "outflow": 36978
+        "inflow": 83573,
+        "outflow": 57275
       },
       {
         "month": "Nov",
-        "inflow": 71126,
-        "outflow": 35297
+        "inflow": 88802,
+        "outflow": 45676
       },
       {
         "month": "Dec",
-        "inflow": 97572,
-        "outflow": 56967
+        "inflow": 79691,
+        "outflow": 42890
       }
     ]
   },
@@ -2884,8 +2884,8 @@ export const mockCustomers: Customer[] = [
     "birthDate": "1979-02-28",
     "gender": "F",
     "maritalStatus": "Single",
-    "occupationCode": "4",
-    "occupation": "4",
+    "occupationCode": "40",
+    "occupation": "พนักงานบริษัท",
     "educationCode": "8",
     "education": "8",
     "riskScore": 1,
@@ -2930,18 +2930,18 @@ export const mockCustomers: Customer[] = [
     "cashFlow": [
       {
         "month": "Oct",
-        "inflow": 311700,
-        "outflow": 173172
+        "inflow": 251718,
+        "outflow": 160130
       },
       {
         "month": "Nov",
-        "inflow": 285059,
-        "outflow": 177595
+        "inflow": 191745,
+        "outflow": 125274
       },
       {
         "month": "Dec",
-        "inflow": 440907,
-        "outflow": 224526
+        "inflow": 359040,
+        "outflow": 210698
       }
     ]
   }
