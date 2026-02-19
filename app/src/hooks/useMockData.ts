@@ -38,8 +38,12 @@ export function useMockData(): UseMockDataReturn {
 
     if (found) {
       setCustomer(found);
-      const recommended = getRecommendedProducts(found.riskScore);
-      setProducts(recommended);
+      if (found.productRecommendations) {
+        setProducts(found.productRecommendations);
+      } else {
+        const recommended = getRecommendedProducts(found.riskScore);
+        setProducts(recommended);
+      }
     } else {
       setError(`Customer "${firstName} ${lastName}" not found. Please try searching in the Customer List below.`);
       setCustomer(null);
@@ -56,10 +60,14 @@ export function useMockData(): UseMockDataReturn {
     // Simulate brief loading for better UX
     setTimeout(() => {
       setCustomer(selectedCustomer);
-      const recommended = getRecommendedProducts(selectedCustomer.riskScore);
-      setProducts(recommended);
+      if (selectedCustomer.productRecommendations) {
+        setProducts(selectedCustomer.productRecommendations);
+      } else {
+        const recommended = getRecommendedProducts(selectedCustomer.riskScore);
+        setProducts(recommended);
+      }
       setLoading(false);
-      
+
       // Scroll to customer persona section
       setTimeout(() => {
         const personaSection = document.getElementById('customer-persona');

@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Star, Check, TrendingUp, Clock, DollarSign, Shield, Info } from 'lucide-react';
+import { TrendingUp, Clock, DollarSign, Shield } from 'lucide-react';
 import type { Product } from '@/types';
 import {
   Table,
@@ -11,12 +11,7 @@ import {
 } from '@/components/ui/table';
 import { Badge } from '@/components/ui/badge';
 
-import {
-  Tooltip,
-  TooltipContent,
-  TooltipProvider,
-  TooltipTrigger,
-} from '@/components/ui/tooltip';
+
 
 interface ProductComparisonProps {
   products: Product[];
@@ -80,12 +75,12 @@ export function ProductComparison({ products }: ProductComparisonProps) {
             <TableRow className="bg-[#F7FAFC]">
               <TableHead className="font-semibold text-[#1A365D]">Product</TableHead>
               <TableHead className="font-semibold text-[#1A365D]">Duration</TableHead>
-              <TableHead className="font-semibold text-[#1A365D]">Rating</TableHead>
+
               <TableHead className="font-semibold text-[#1A365D]">Interest Rate</TableHead>
               <TableHead className="font-semibold text-[#1A365D]">Analysis</TableHead>
               <TableHead className="font-semibold text-[#1A365D]">Min Investment</TableHead>
               <TableHead className="font-semibold text-[#1A365D]">Risk</TableHead>
-              <TableHead className="font-semibold text-[#1A365D]">Status</TableHead>
+
             </TableRow>
           </TableHeader>
           <TableBody>
@@ -109,17 +104,7 @@ export function ProductComparison({ products }: ProductComparisonProps) {
                     <span className="text-sm">{product.duration}</span>
                   </div>
                 </TableCell>
-                <TableCell>
-                  <div className="flex items-center gap-1">
-                    {[...Array(5)].map((_, i) => (
-                      <Star
-                        key={i}
-                        className={`w-4 h-4 ${i < product.rating ? 'text-[#F6AD55] fill-[#F6AD55]' : 'text-[#E2E8F0]'
-                          }`}
-                      />
-                    ))}
-                  </div>
-                </TableCell>
+
                 <TableCell>
                   <div className="flex items-center gap-2">
                     <TrendingUp className="w-4 h-4 text-[#48BB78]" />
@@ -128,24 +113,10 @@ export function ProductComparison({ products }: ProductComparisonProps) {
                 </TableCell>
                 <TableCell>
                   <div className="flex flex-col gap-2">
-                    {product.recommended && (
-                      <TooltipProvider>
-                        <Tooltip>
-                          <TooltipTrigger asChild>
-                            <span className="inline-flex items-center gap-1 text-xs text-[#E31837] font-medium cursor-help border-b border-dashed border-[#E31837]">
-                              <Info className="w-3 h-3" />
-                              Why this fund?
-                            </span>
-                          </TooltipTrigger>
-                          <TooltipContent className="bg-white p-3 shadow-lg border border-gray-100 max-w-xs">
-                            <p className="text-sm text-gray-700">
-                              Based on your risk profile ({product.riskLevel}) and investment goal,
-                              this fund offers the best projected return of {product.interestRate}%
-                              with moderate volatility.
-                            </p>
-                          </TooltipContent>
-                        </Tooltip>
-                      </TooltipProvider>
+                    {product.recommended && product.reason && (
+                      <p className="text-sm text-gray-600 leading-relaxed">
+                        {product.reason}
+                      </p>
                     )}
                   </div>
                 </TableCell>
@@ -162,14 +133,7 @@ export function ProductComparison({ products }: ProductComparisonProps) {
                     {product.riskLevel}
                   </Badge>
                 </TableCell>
-                <TableCell>
-                  {product.recommended && (
-                    <Badge className="bg-gradient-to-r from-[#E31837] to-[#B9132C] text-white">
-                      <Check className="w-3 h-3 mr-1" />
-                      Recommended
-                    </Badge>
-                  )}
-                </TableCell>
+
               </motion.tr>
             ))}
           </TableBody>

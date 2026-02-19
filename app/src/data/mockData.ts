@@ -1,8 +1,179 @@
 import type { Customer, Product, Scenario, Branch } from '@/types';
 
+export const MOCK_PRODUCT_POOL: Product[] = [
+  // Deposits (Reference: app/src/data/Deposit)
+  {
+    id: 'prod_dep_001',
+    name: 'Special Savings Deposit', // (2) เอกสารเปรียบเทียบผลิตภัณฑ์_เงินฝากออมทรัพย์พิเศษ_TH 01022026_New templates.pdf
+    category: 'deposit',
+    duration: 'No fixed term',
+    rating: 5,
+    interestRate: 2.20,
+    minInvestment: 500,
+    features: ['High Interest', 'Flexible Withdrawal'],
+    recommended: true,
+    riskLevel: 'low',
+    description: 'High rate savings with flexibility.',
+  },
+  {
+    id: 'prod_dep_002',
+    name: 'Tax-Free Fixed Deposit', // (4) เอกสารเปรียบเทียบผลิตภัณฑ์_เงินฝากประจำปลอดภาษี_TH 01012026_New templates.pdf
+    category: 'deposit',
+    duration: '24 Months',
+    rating: 4,
+    interestRate: 2.50,
+    minInvestment: 1000,
+    features: ['Tax Free', 'Monthly Deposit'],
+    recommended: true,
+    riskLevel: 'low',
+    description: 'Tax-free interest for disciplined savers.',
+  },
+  {
+    id: 'prod_dep_003',
+    name: 'Digital Deposit Details', // Product Catalog Digital Deposit (TH)_Eff.2026.02.01.pdf
+    category: 'deposit',
+    duration: 'No fixed term',
+    rating: 5,
+    interestRate: 1.88,
+    minInvestment: 0,
+    features: ['Digital Only', 'High Liquidity'],
+    recommended: true,
+    riskLevel: 'low',
+    description: 'Convenient digital savings account.',
+  },
+
+  // Insurance (Reference: app/src/data/Insurance)
+  {
+    id: 'prod_ins_001',
+    name: 'CIMB Thai Sabaidee Savings 12/4', // ประกันชีวิตออนไลน์ ซีไอเอ็มบี ไทย สบายดี เซฟวิ่งส์ 12.4.pdf
+    category: 'insurance',
+    duration: '12 years',
+    rating: 4,
+    interestRate: 3.0, // Estimated IRR
+    minInvestment: 20000,
+    features: ['Tax Deduction', 'Life Protection', 'Guaranteed Cash Back'],
+    recommended: true,
+    riskLevel: 'low',
+    description: 'Savings insurance with guaranteed returns and tax benefits.',
+  },
+
+  // Mutual Funds (Reference: app/src/data/Mutual Fund)
+  {
+    id: 'prod_fund_001',
+    name: 'KF-HGOLD', // FFS_KF-HGOLD_TH.pdf
+    category: 'fund',
+    duration: 'No fixed term',
+    rating: 4,
+    interestRate: 5.5, // Gold return varies
+    minInvestment: 1000,
+    features: ['Gold Bullion', 'Hedged'],
+    recommended: true,
+    riskLevel: 'high',
+    description: 'Invests in physical gold with currency hedging.',
+  },
+  {
+    id: 'prod_fund_002',
+    name: 'SCBGOLDH RMF', // SCBGOLDHRMF_SUM.pdf
+    category: 'fund',
+    duration: 'Retirement',
+    rating: 4,
+    interestRate: 5.0,
+    minInvestment: 2000,
+    features: ['Tax Deduction', 'Retirement', 'Gold'],
+    recommended: true,
+    riskLevel: 'high',
+    description: 'Gold fund for retirement planning with tax benefits.',
+  },
+  {
+    id: 'prod_fund_003',
+    name: 'SCBGOLDH', // SCBGOLDH_SUM.pdf
+    category: 'fund',
+    duration: 'No fixed term',
+    rating: 4,
+    interestRate: 5.2,
+    minInvestment: 1000,
+    features: ['Gold Bullion', 'Currency Hedge'],
+    recommended: true,
+    riskLevel: 'high',
+    description: 'Fund investing in SPDR Gold Trust with hedging.',
+  },
+  {
+    id: 'prod_fund_004',
+    name: 'PRINCIPAL EQESG', // en_PRINCIPAL_EQESG_FFS.pdf
+    category: 'fund',
+    duration: '5+ years',
+    rating: 5,
+    interestRate: 8.0,
+    minInvestment: 5000,
+    features: ['Global Equities', 'ESG Focus', 'Sustainable'],
+    recommended: true,
+    riskLevel: 'high',
+    description: 'Global equity fund focusing on ESG criteria.',
+  },
+  {
+    id: 'prod_fund_005',
+    name: 'PRINCIPAL FIRMF', // en_PRINCIPAL_FIRMF_FFS.pdf
+    category: 'fund',
+    duration: 'Retirement',
+    rating: 3,
+    interestRate: 3.5,
+    minInvestment: 2000,
+    features: ['Fixed Income', 'Tax Deduction', 'Retirement'],
+    recommended: true,
+    riskLevel: 'medium',
+    description: 'Fixed income RMF for stable retirement savings.',
+  },
+  {
+    id: 'prod_fund_006',
+    name: 'PRINCIPAL PRMF', // en_PRINCIPAL_PRMF_FFS.pdf
+    category: 'fund',
+    duration: 'Retirement',
+    rating: 4,
+    interestRate: 6.0,
+    minInvestment: 2000,
+    features: ['Property', 'REITs', 'Tax Deduction'],
+    recommended: true,
+    riskLevel: 'medium', // Property is high/medium
+    description: 'Property fund RMF for income and growth.',
+  },
+  {
+    id: 'prod_fund_007',
+    name: 'PRINCIPAL JEQ', // th_PRINCIPAL_JEQ_FFS.pdf
+    category: 'fund',
+    duration: '5+ years',
+    rating: 5,
+    interestRate: 9.0,
+    minInvestment: 5000,
+    features: ['Japan Equities', 'Growth'],
+    recommended: true,
+    riskLevel: 'high',
+    description: 'Invests in high-growth Japanese companies.',
+  },
+  {
+    id: 'prod_fund_008',
+    name: 'PRINCIPAL iGOLD', // th_PRINCIPAL_iGOLD_FFS.pdf
+    category: 'fund',
+    duration: 'No fixed term',
+    rating: 4,
+    interestRate: 5.4,
+    minInvestment: 1000,
+    features: ['Gold', 'Alternative Inv'],
+    recommended: true,
+    riskLevel: 'high',
+    description: 'Fund of funds investing in gold ETFs.',
+  },
+];
+
+
+
 export const mockCustomers: Customer[] = [
   {
     "id": "3520000037309",
+    productRecommendations: [
+      { ...MOCK_PRODUCT_POOL[0], reason: "เพื่อความปลอดภัยของเงินต้นและสภาพคล่องสูง เหมาะสำหรับบัญชีเงินสำรองฉุกเฉิน" },
+      { ...MOCK_PRODUCT_POOL[3], reason: "สร้างหลักประกันที่มั่นคงและรับสิทธิประโยชน์ลดหย่อนภาษี" },
+      { ...MOCK_PRODUCT_POOL[1], reason: "ออมเงินระยะยาวแบบปลอดภาษี ได้ดอกเบี้ยเต็มเม็ดเต็มหน่วย" }
+    ],
     "cif": "3520000037309",
     "prefixTH": "นาย",
     "prefixEN": "MRS.",
@@ -74,6 +245,11 @@ export const mockCustomers: Customer[] = [
   },
   {
     "id": "3550000039180",
+    productRecommendations: [
+      { ...MOCK_PRODUCT_POOL[7], reason: "ลงทุนในหุ้นเติบโตทั่วโลก เน้นหุ้นที่มีปัจจัยพื้นฐานดีและยั่งยืน (ESG)" },
+      { ...MOCK_PRODUCT_POOL[4], reason: "ลงทุนในทองคำเพื่อป้องกันความเสี่ยงจากอัตราแลกเปลี่ยนและภาวะเงินเฟ้อ" },
+      { ...MOCK_PRODUCT_POOL[2], reason: "บัญชีเงินฝากดิจิทัล ดอกเบี้ยสูง สะดวก คล่องตัว" }
+    ],
     "cif": "3550000039180",
     "prefixTH": "นาย",
     "prefixEN": "MR.",
@@ -150,6 +326,11 @@ export const mockCustomers: Customer[] = [
   },
   {
     "id": "3520000033328",
+    productRecommendations: [
+      { ...MOCK_PRODUCT_POOL[10], reason: "โอกาสรับผลตอบแทนสูงจากการเติบโตของบริษัทจดทะเบียนในญี่ปุ่น" },
+      { ...MOCK_PRODUCT_POOL[6], reason: "ลงทุนในกองทุนทองคำระดับโลก SPDR Gold Trust เพื่อกระจายความเสี่ยง" },
+      { ...MOCK_PRODUCT_POOL[0], reason: "พักเงินในบัญชีออมทรัพย์ดอกเบี้ยสูง ก่อนรอจังหวะลงทุนเพิ่ม" }
+    ],
     "cif": "3520000033328",
     "prefixTH": "นาย",
     "prefixEN": "MR.",
@@ -226,6 +407,11 @@ export const mockCustomers: Customer[] = [
   },
   {
     "id": "3570000048485",
+    productRecommendations: [
+      { ...MOCK_PRODUCT_POOL[11], reason: "กระจายการลงทุนในกองทุนทองคำหลากหลายกองทุน (Fund of Funds)" },
+      { ...MOCK_PRODUCT_POOL[8], reason: "ลงทุนต่อเนื่องสม่ำเสมอในกองทุนตราสารหนี้ เพื่อการเกษียณ (RMF)" },
+      { ...MOCK_PRODUCT_POOL[3], reason: "ประกันชีวิตแบบสะสมทรัพย์ คุ้มครองชีวิตและมีเงินคืนแน่นอน" }
+    ],
     "cif": "3570000048485",
     "prefixTH": "นาย",
     "prefixEN": "MR.",
@@ -302,6 +488,11 @@ export const mockCustomers: Customer[] = [
   },
   {
     "id": "3570000026921",
+    productRecommendations: [
+      { ...MOCK_PRODUCT_POOL[5], reason: "ออมเงินเพื่อวัยเกษียณกับกองทุน RMF ที่ลงทุนในทองคำ พร้อมสิทธิลดหย่อนภาษี" },
+      { ...MOCK_PRODUCT_POOL[9], reason: "สร้างรายได้สม่ำเสมอจากกองทุนรวมอสังหาริมทรัพย์และ REITs" },
+      { ...MOCK_PRODUCT_POOL[1], reason: "ฝากประจำปลอดภาษี 24 เดือน สร้างวินัยการออมเพื่อเป้าหมายในอนาคต" }
+    ],
     "cif": "3570000026921",
     "prefixTH": "นางสาว",
     "prefixEN": "MISS",
@@ -378,6 +569,11 @@ export const mockCustomers: Customer[] = [
   },
   {
     "id": "3550000010029",
+    productRecommendations: [
+      { ...MOCK_PRODUCT_POOL[10], reason: "เน้นการเติบโตสูงจากการฟื้นตัวของเศรษฐกิจญี่ปุ่น" },
+      { ...MOCK_PRODUCT_POOL[7], reason: "ลงทุนระยะยาวในหุ้นยั่งยืนทั่วโลก สอดคล้องกับเทรนด์ ESG" },
+      { ...MOCK_PRODUCT_POOL[6], reason: "กระจายความเสี่ยงพอร์ตการลงทุนด้วยทองคำ" }
+    ],
     "cif": "3550000010029",
     "prefixTH": "นางสาว",
     "prefixEN": "MISS",
@@ -454,6 +650,11 @@ export const mockCustomers: Customer[] = [
   },
   {
     "id": "3500000014594",
+    productRecommendations: [
+      { ...MOCK_PRODUCT_POOL[2], reason: "บริหารจัดการเงินสดอย่างมีประสิทธิภาพด้วยบัญชีดิจิทัลดอกเบี้ยสูง" },
+      { ...MOCK_PRODUCT_POOL[8], reason: "เริ่มต้นวางแผนภาษีและเกษียณด้วยกองทุน RMF ตราสารหนี้ ความเสี่ยงต่ำ" },
+      { ...MOCK_PRODUCT_POOL[3], reason: "สร้างหลักประกันให้คนข้างหลัง พร้อมรับผลตอบแทนที่แน่นอน" }
+    ],
     "cif": "3500000014594",
     "prefixTH": "นางสาว",
     "prefixEN": "MISS",
@@ -530,6 +731,11 @@ export const mockCustomers: Customer[] = [
   },
   {
     "id": "3570000038145",
+    productRecommendations: [
+      { ...MOCK_PRODUCT_POOL[9], reason: "ลงทุนในสินทรัพย์ทางเลือก (อสังหาฯ) เพื่อโอกาสรับผลตอบแทนที่สม่ำเสมอ" },
+      { ...MOCK_PRODUCT_POOL[5], reason: "ใช้สิทธิลดหย่อนภาษีเต็มที่พร้อมกระจายความเสี่ยงในทองคำ" },
+      { ...MOCK_PRODUCT_POOL[0], reason: "สภาพคล่องสูง รองรับค่าใช้จ่ายฉุกเฉินของครอบครัว" }
+    ],
     "cif": "3570000038145",
     "prefixTH": "นาย",
     "prefixEN": "MR.",
@@ -606,6 +812,11 @@ export const mockCustomers: Customer[] = [
   },
   {
     "id": "3570000007370",
+    productRecommendations: [
+      { ...MOCK_PRODUCT_POOL[3], reason: "มั่นคง ปลอดภัย มีเงินคืนระหว่างสัญญา ตอบโจทย์แม่บ้านยุคใหม่" },
+      { ...MOCK_PRODUCT_POOL[1], reason: "ออมเงินเพื่อการศึกษาบุตร กองทุนรวมปลอดภาษี" },
+      { ...MOCK_PRODUCT_POOL[8], reason: "วางแผนเกษียณอย่างมั่นคงด้วยกองทุน RMF ตราสารหนี้" }
+    ],
     "cif": "3570000007370",
     "prefixTH": "นางสาว",
     "prefixEN": "MISS",
@@ -682,6 +893,11 @@ export const mockCustomers: Customer[] = [
   },
   {
     "id": "3500000003469",
+    productRecommendations: [
+      { ...MOCK_PRODUCT_POOL[6], reason: "ลงทุนในทองคำเพื่อกระจายความเสี่ยงและป้องกันเงินเฟ้อในระยะยาว" },
+      { ...MOCK_PRODUCT_POOL[3], reason: "สร้างหลักประกันชีวิตพร้อมโอกาสรับผลตอบแทนจากการลงทุน" },
+      { ...MOCK_PRODUCT_POOL[1], reason: "เก็บออมสม่ำเสมอแบบปลอดภาษี เพื่อเป้าหมายทางการเงินในอนาคต" }
+    ],
     "cif": "3500000003469",
     "prefixTH": "นาย",
     "prefixEN": "MR.",
@@ -758,6 +974,11 @@ export const mockCustomers: Customer[] = [
   },
   {
     "id": "3500000003339",
+    productRecommendations: [
+      { ...MOCK_PRODUCT_POOL[9], reason: "สร้างรายได้สม่ำเสมอจากค่าเช่าและส่วนต่างราคาอสังหาริมทรัพย์" },
+      { ...MOCK_PRODUCT_POOL[1], reason: "ออมเงินดอกเบี้ยสูงแบบปลอดภาษี ความเสี่ยงต่ำ" },
+      { ...MOCK_PRODUCT_POOL[4], reason: "เพิ่มโอกาสรับผลตอบแทนที่ชนะเงินเฟ้อด้วยการลงทุนในหุ้นยั่งยืน" }
+    ],
     "cif": "3500000003339",
     "prefixTH": "นางสาว",
     "prefixEN": "MISS",
@@ -834,6 +1055,11 @@ export const mockCustomers: Customer[] = [
   },
   {
     "id": "3500000038421",
+    productRecommendations: [
+      { ...MOCK_PRODUCT_POOL[11], reason: "เพิ่มโอกาสทำกำไรจากราคาทองคำโลก ผ่านกองทุนรวมที่บริหารโดยผู้เชี่ยวชาญ" },
+      { ...MOCK_PRODUCT_POOL[7], reason: "เติบโตไปพร้อมกับเทรนด์ธุรกิจโลกที่ให้ความสำคัญกับสิ่งแวดล้อมและธรรมาภิบาล" },
+      { ...MOCK_PRODUCT_POOL[2], reason: "บริหารสภาพคล่องด้วยบัญชีเงินฝากดิจิทัล ดอกเบี้ยสูงกว่าออมทรัพย์ทั่วไป" }
+    ],
     "cif": "3500000038421",
     "prefixTH": "นางสาว",
     "prefixEN": "MISS",
@@ -910,6 +1136,11 @@ export const mockCustomers: Customer[] = [
   },
   {
     "id": "3520000015152",
+    productRecommendations: [
+      { ...MOCK_PRODUCT_POOL[8], reason: "เตรียมพร้อมสู่วัยเกษียณด้วยกองทุน RMF ตราสารหนี้ มั่นคง ปลอดภัย" },
+      { ...MOCK_PRODUCT_POOL[0], reason: "ออมทรัพย์ดอกเบี้ยพิเศษ ถอนได้คล่องตัวเมื่อจำเป็น" },
+      { ...MOCK_PRODUCT_POOL[3], reason: "คุ้มครองชีวิตและสุขภาพ พร้อมสิทธิลดหย่อนภาษี" }
+    ],
     "cif": "3520000015152",
     "prefixTH": "นาย",
     "prefixEN": "MR.",
@@ -986,6 +1217,11 @@ export const mockCustomers: Customer[] = [
   },
   {
     "id": "3570000064993",
+    productRecommendations: [
+      { ...MOCK_PRODUCT_POOL[6], reason: "ทางเลือกการลงทุนในทองคำ เพื่อป้องกันความผันผวนของพอร์ตการลงทุน" },
+      { ...MOCK_PRODUCT_POOL[9], reason: "รับผลตอบแทนสม่ำเสมอจากการลงทุนในทรัสต์เพื่อการลงทุนในอสังหาริมทรัพย์ (REITs)" },
+      { ...MOCK_PRODUCT_POOL[2], reason: "บัญชีเงินฝากคู่ใจนักลงทุน ย้ายเงินสะดวก ดอกเบี้ยสูง" }
+    ],
     "cif": "3570000064993",
     "prefixTH": "นาย",
     "prefixEN": "MR.",
@@ -1062,6 +1298,11 @@ export const mockCustomers: Customer[] = [
   },
   {
     "id": "3570000031283",
+    productRecommendations: [
+      { ...MOCK_PRODUCT_POOL[10], reason: "คว้าโอกาสการเติบโตของเศรษฐกิจญี่ปุ่นและบริษัทชั้นนำในตลาดโตเกียว" },
+      { ...MOCK_PRODUCT_POOL[5], reason: "ลงทุนเพื่อวัยเกษียณในกองทุนทองคำ RMF สร้างความมั่นคงในระยะยาว" },
+      { ...MOCK_PRODUCT_POOL[0], reason: "เงินฝากออมทรัพย์ดอกเบี้ยพิเศษ ปลอดภัย สภาพคล่องสูง" }
+    ],
     "cif": "3570000031283",
     "prefixTH": "นางสาว",
     "prefixEN": "MISS",
@@ -1138,6 +1379,11 @@ export const mockCustomers: Customer[] = [
   },
   {
     "id": "3500000059906",
+    productRecommendations: [
+      { ...MOCK_PRODUCT_POOL[1], reason: "สร้างวินัยการออมด้วยเงินฝากประจำปลอดภาษี เพื่อเป้าหมายระยะสั้น-กลาง" },
+      { ...MOCK_PRODUCT_POOL[8], reason: "ออมเงินในกองทุนตราสารหนี้ RMF ลดความเสี่ยงเมื่อใกล้เกษียณ" },
+      { ...MOCK_PRODUCT_POOL[3], reason: "หลักประกันที่มั่นคงเพื่อคนในครอบครัว" }
+    ],
     "cif": "3500000059906",
     "prefixTH": "นาย",
     "prefixEN": "MR.",
@@ -1214,6 +1460,11 @@ export const mockCustomers: Customer[] = [
   },
   {
     "id": "3500000020788",
+    productRecommendations: [
+      { ...MOCK_PRODUCT_POOL[5], reason: "วัยเกษียณที่มั่นคง ด้วยการลงทุนในทองคำ RMF พร้อมสิทธิทางภาษี" },
+      { ...MOCK_PRODUCT_POOL[0], reason: "รักษาเงินต้นและมีเงินใช้จ่ายยามฉุกเฉิน ด้วยบัญชีออมทรัพย์พิเศษ" },
+      { ...MOCK_PRODUCT_POOL[3], reason: "ประกันชีวิตแบบสะสมทรัพย์ เงินออมงอกเงยพร้อมความคุ้มครอง" }
+    ],
     "cif": "3500000020788",
     "prefixTH": "นาย",
     "prefixEN": "MR.",
@@ -1290,6 +1541,11 @@ export const mockCustomers: Customer[] = [
   },
   {
     "id": "3520000034350",
+    productRecommendations: [
+      { ...MOCK_PRODUCT_POOL[9], reason: "ลงทุนในอสังหาริมทรัพย์และโครงสร้างพื้นฐาน เพื่อเงินปันผลที่สม่ำเสมอ" },
+      { ...MOCK_PRODUCT_POOL[4], reason: "กระจายการลงทุนไปทั่วโลกกับกองทุนหุ้นยั่งยืน (ESG)" },
+      { ...MOCK_PRODUCT_POOL[2], reason: "บริหารจัดการเงินเดือนและรายได้พิเศษด้วยบัญชีดิจิทัลที่ให้ดอกเบี้ยสูง" }
+    ],
     "cif": "3520000034350",
     "prefixTH": "นาง",
     "prefixEN": "MRS.",
@@ -1366,6 +1622,11 @@ export const mockCustomers: Customer[] = [
   },
   {
     "id": "3510000004131",
+    productRecommendations: [
+      { ...MOCK_PRODUCT_POOL[11], reason: "เพิ่มโอกาสสร้างผลตอบแทนสูงสุดด้วยกองทุนทองคำ Fund of Funds" },
+      { ...MOCK_PRODUCT_POOL[7], reason: "ลงทุนในบริษัทชั้นนำทั่วโลกที่มีธรรมาภิบาลดี เพื่อการเติบโตที่ยั่งยืน" },
+      { ...MOCK_PRODUCT_POOL[10], reason: "กระจายความเสี่ยงพอร์ตการลงทุนไปยังตลาดหุ้นญี่ปุ่น" }
+    ],
     "cif": "3510000004131",
     "prefixTH": "นางสาว",
     "prefixEN": "MISS",
@@ -3113,6 +3374,9 @@ export const mockBranches: Branch[] = [
     services: ['Personal Banking', 'Loan Services'],
   },
 ];
+
+
+
 
 export const findCustomerByName = (firstName: string, lastName: string): Customer | undefined => {
   return mockCustomers.find(

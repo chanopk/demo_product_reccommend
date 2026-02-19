@@ -41,6 +41,7 @@ export interface Customer {
     inflow: number;
     outflow: number;
   }[];
+  productRecommendations?: Product[];
 }
 
 export interface ExistingProduct {
@@ -61,6 +62,7 @@ export interface Product {
   recommended: boolean;
   riskLevel: 'low' | 'medium' | 'high';
   description: string;
+  reason?: string;
 }
 
 export interface Scenario {
