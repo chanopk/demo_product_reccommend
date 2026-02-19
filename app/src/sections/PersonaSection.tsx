@@ -1,3 +1,4 @@
+import React from 'react';
 import { motion } from 'framer-motion';
 import { Wallet, TrendingUp, Package, PieChart, BarChart3 } from 'lucide-react';
 import {
@@ -26,18 +27,34 @@ export function PersonaSection({ customer }: PersonaSectionProps) {
   const totalAssets = customer.existingProducts.reduce((sum, p) => sum + p.amount, 0);
   const { value: totalValue } = useCountUp(totalAssets, 2000);
 
-  // Mock Data for Asset Allocation
-  const assetAllocationData = [
-    { name: 'Equities', value: 45, color: '#E31837' },
-    { name: 'Fixed Income', value: 35, color: '#780000' },
-    { name: 'Cash', value: 20, color: '#A0AEC0' },
-  ];
+  // Calculate Asset Allocation from Existing Products
+  const assetAllocationData = React.useMemo(() => {
+    const allocation = {
+      Deposits: { value: 0, color: '#2B6CB0' }, // Blue
+      Investments: { value: 0, color: '#E31837' }, // CIMB Red
+      Insurance: { value: 0, color: '#38A169' }, // Green
+    };
 
-  // Mock Data for Cash Flow (Last 3 Months)
-  const cashFlowData = [
-    { month: 'Oct', inflow: 150000, outflow: 80000 },
-    { month: 'Nov', inflow: 160000, outflow: 90000 },
-    { month: 'Dec', inflow: 200000, outflow: 120000 },
+    customer.existingProducts.forEach((p) => {
+      if (['savings', 'deposit'].includes(p.type)) {
+        allocation.Deposits.value += p.amount;
+      } else if (p.type === 'investment') {
+        allocation.Investments.value += p.amount;
+      } else if (p.type === 'insurance') {
+        allocation.Insurance.value += p.amount;
+      }
+    });
+
+    return Object.entries(allocation)
+      .map(([name, data]) => ({ name, ...data }))
+      .filter((item) => item.value > 0);
+  }, [customer.existingProducts]);
+
+  // Cash Flow Data (from Customer Mock)
+  const cashFlowData = customer.cashFlow || [
+    { month: 'Oct', inflow: 0, outflow: 0 },
+    { month: 'Nov', inflow: 0, outflow: 0 },
+    { month: 'Dec', inflow: 0, outflow: 0 },
   ];
 
   const getProductTypeColor = (type: string) => {

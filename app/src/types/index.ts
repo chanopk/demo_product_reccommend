@@ -1,15 +1,46 @@
 export interface Customer {
   id: string;
+  cif: string;
+  prefixTH: string;
+  prefixEN: string;
   firstName: string;
   lastName: string;
+  firstNameTH: string;
+  lastNameTH: string;
+  nationalityCode: string;
+  residentCountryCode: string;
   age: number;
+  birthDate: string;
+  gender: string;
+  maritalStatus: string;
+  occupationCode: string;
   occupation: string;
+  educationCode: string;
+  education: string;
   riskScore: number;
+  riskProfileLevel: string;
   vulnerableFlag: boolean;
+  vulnerableDetail: string;
   yearsWithBank: number;
-  segment: 'Mass' | 'Preferred';
+  segment: string;
+  monthlyIncomeRangeCode: string;
+  monthlyIncomeLevel: string;
+  openBranchCode: string;
+  openDate: string;
   existingProducts: ExistingProduct[];
   address: string;
+  // Investment specific
+  fxRiskFlag: string;
+  openFnxFromFlag: string;
+  fundCode?: string;
+  unitBalance?: number;
+  nav?: number;
+  amount?: number;
+  cashFlow?: {
+    month: string;
+    inflow: number;
+    outflow: number;
+  }[];
 }
 
 export interface ExistingProduct {
