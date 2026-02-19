@@ -30,11 +30,10 @@ export function Header() {
               <Button
                 key={item}
                 variant={index === 0 ? 'secondary' : 'ghost'}
-                className={`text-sm ${
-                  index === 0
+                className={`text-sm ${index === 0
                     ? 'bg-[#FFF5F5] text-[#E31837] hover:bg-[#FFE5E5]'
                     : 'text-[#718096] hover:text-[#1A202C]'
-                }`}
+                  }`}
               >
                 {item}
               </Button>
@@ -43,6 +42,12 @@ export function Header() {
 
           {/* Right - User Actions */}
           <div className="flex items-center gap-3">
+            <Button
+              className="bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-700 hover:to-blue-600 text-white shadow-md"
+              onClick={() => window.open('https://ca-agentic-chat-35qn5exfa2lyk.politesky-e7ff17e8.eastus.azurecontainerapps.io/studio', '_blank')}
+            >
+              Chat
+            </Button>
             <Button variant="ghost" size="icon" className="relative">
               <Bell className="w-5 h-5 text-[#718096]" />
               <span className="absolute top-1 right-1 w-2 h-2 bg-[#E31837] rounded-full" />
