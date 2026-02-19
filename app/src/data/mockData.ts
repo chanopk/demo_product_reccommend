@@ -204,7 +204,7 @@ export const mockCustomers: Customer[] = [
     "existingProducts": [
       {
         "name": "Savings Account",
-        "amount": 0,
+        "amount": 168747.3,
         "type": "savings"
       },
       {
@@ -280,7 +280,7 @@ export const mockCustomers: Customer[] = [
     "existingProducts": [
       {
         "name": "Savings Account",
-        "amount": 0,
+        "amount": 9425313.17,
         "type": "savings"
       },
       {
@@ -361,7 +361,7 @@ export const mockCustomers: Customer[] = [
     "existingProducts": [
       {
         "name": "Deposit Account",
-        "amount": 0,
+        "amount": 1443175.57,
         "type": "deposit"
       },
       {
@@ -371,7 +371,7 @@ export const mockCustomers: Customer[] = [
       },
       {
         "name": "PRINCIPAL APDI-A",
-        "amount": 0,
+        "amount": 5812001.57,
         "type": "investment"
       },
       {
@@ -442,7 +442,7 @@ export const mockCustomers: Customer[] = [
     "existingProducts": [
       {
         "name": "Savings Account",
-        "amount": 0,
+        "amount": 355903.55,
         "type": "savings"
       },
       {
@@ -523,7 +523,7 @@ export const mockCustomers: Customer[] = [
     "existingProducts": [
       {
         "name": "Deposit Account",
-        "amount": 0,
+        "amount": 253285.25,
         "type": "deposit"
       },
       {
@@ -533,7 +533,7 @@ export const mockCustomers: Customer[] = [
       },
       {
         "name": "PRINCIPAL DPLUS-A",
-        "amount": 0,
+        "amount": 1507369.26,
         "type": "investment"
       },
       {
@@ -604,7 +604,7 @@ export const mockCustomers: Customer[] = [
     "existingProducts": [
       {
         "name": "Deposit Account",
-        "amount": 0,
+        "amount": 259629.36,
         "type": "deposit"
       },
       {
@@ -685,7 +685,7 @@ export const mockCustomers: Customer[] = [
     "existingProducts": [
       {
         "name": "Savings Account",
-        "amount": 0,
+        "amount": 44992.05,
         "type": "savings"
       },
       {
@@ -766,7 +766,7 @@ export const mockCustomers: Customer[] = [
     "existingProducts": [
       {
         "name": "Savings Account",
-        "amount": 0,
+        "amount": 235973.21,
         "type": "savings"
       },
       {
@@ -847,7 +847,7 @@ export const mockCustomers: Customer[] = [
     "existingProducts": [
       {
         "name": "Deposit Account",
-        "amount": 0,
+        "amount": 141448.89,
         "type": "deposit"
       },
       {
@@ -857,7 +857,7 @@ export const mockCustomers: Customer[] = [
       },
       {
         "name": "PRINCIPAL USEQ-A",
-        "amount": 0,
+        "amount": 436511.96,
         "type": "investment"
       },
       {
@@ -928,7 +928,7 @@ export const mockCustomers: Customer[] = [
     "existingProducts": [
       {
         "name": "Savings Account",
-        "amount": 0,
+        "amount": 153809.97,
         "type": "savings"
       },
       {
@@ -1009,7 +1009,7 @@ export const mockCustomers: Customer[] = [
     "existingProducts": [
       {
         "name": "Deposit Account",
-        "amount": 0,
+        "amount": 11681959.28,
         "type": "deposit"
       },
       {
@@ -1090,7 +1090,7 @@ export const mockCustomers: Customer[] = [
     "existingProducts": [
       {
         "name": "Savings Account",
-        "amount": 0,
+        "amount": 266690.38,
         "type": "savings"
       },
       {
@@ -1100,7 +1100,7 @@ export const mockCustomers: Customer[] = [
       },
       {
         "name": "PRINCIPAL VNTG7M1",
-        "amount": 0,
+        "amount": 935822.79,
         "type": "investment"
       },
       {
@@ -1171,7 +1171,7 @@ export const mockCustomers: Customer[] = [
     "existingProducts": [
       {
         "name": "Savings Account",
-        "amount": 0,
+        "amount": 1915060.78,
         "type": "savings"
       },
       {
@@ -1252,7 +1252,7 @@ export const mockCustomers: Customer[] = [
     "existingProducts": [
       {
         "name": "Savings Account",
-        "amount": 0,
+        "amount": 595982.86,
         "type": "savings"
       },
       {
@@ -1262,7 +1262,7 @@ export const mockCustomers: Customer[] = [
       },
       {
         "name": "PRINCIPAL GSTEP",
-        "amount": 0,
+        "amount": 6701471.99,
         "type": "investment"
       },
       {
@@ -1333,7 +1333,7 @@ export const mockCustomers: Customer[] = [
     "existingProducts": [
       {
         "name": "Deposit Account",
-        "amount": 0,
+        "amount": 1284638.87,
         "type": "deposit"
       },
       {
@@ -1414,7 +1414,7 @@ export const mockCustomers: Customer[] = [
     "existingProducts": [
       {
         "name": "Savings Account",
-        "amount": 0,
+        "amount": 379885.18,
         "type": "savings"
       },
       {
@@ -1495,7 +1495,7 @@ export const mockCustomers: Customer[] = [
     "existingProducts": [
       {
         "name": "Deposit Account",
-        "amount": 0,
+        "amount": 351784.22,
         "type": "deposit"
       },
       {
@@ -1505,7 +1505,7 @@ export const mockCustomers: Customer[] = [
       },
       {
         "name": "PRINCIPAL GLEADER-A",
-        "amount": 0,
+        "amount": 742083.19,
         "type": "investment"
       },
       {
@@ -1576,7 +1576,7 @@ export const mockCustomers: Customer[] = [
     "existingProducts": [
       {
         "name": "Deposit Account",
-        "amount": 0,
+        "amount": 414374.62,
         "type": "deposit"
       },
       {
@@ -1657,7 +1657,7 @@ export const mockCustomers: Customer[] = [
     "existingProducts": [
       {
         "name": "Savings Account",
-        "amount": 0,
+        "amount": 572141.03,
         "type": "savings"
       },
       {
@@ -1733,7 +1733,7 @@ export const mockCustomers: Customer[] = [
     "existingProducts": [
       {
         "name": "Savings Account",
-        "amount": 0,
+        "amount": 143609.08,
         "type": "savings"
       },
       {
@@ -1770,7 +1770,12 @@ export const mockCustomers: Customer[] = [
         "inflow": 42999,
         "outflow": 19464
       }
-    ]
+    ],
+    productRecommendations: [
+      { ...MOCK_PRODUCT_POOL[5], reason: "เพื่อเป็นหลักประกันในอนาคต" },
+      { ...MOCK_PRODUCT_POOL[6], reason: "เพิ่มสภาพคล่องทางการเงิน" },
+      { ...MOCK_PRODUCT_POOL[9], reason: "คุ้มครองชีวิตและทรัพย์สิน" }
+    ],
   },
   {
     "id": "3550000044254",
@@ -1804,7 +1809,7 @@ export const mockCustomers: Customer[] = [
     "existingProducts": [
       {
         "name": "Deposit Account",
-        "amount": 0,
+        "amount": 623747.24,
         "type": "deposit"
       },
       {
@@ -1841,7 +1846,12 @@ export const mockCustomers: Customer[] = [
         "inflow": 493808,
         "outflow": 339152
       }
-    ]
+    ],
+    productRecommendations: [
+      { ...MOCK_PRODUCT_POOL[3], reason: "ลงทุนในสินทรัพย์ที่มีคุณภาพ" },
+      { ...MOCK_PRODUCT_POOL[1], reason: "คุ้มครองชีวิตและทรัพย์สิน" },
+      { ...MOCK_PRODUCT_POOL[4], reason: "สร้างความมั่นคงทางการเงิน" }
+    ],
   },
   {
     "id": "3560000001770",
@@ -1875,7 +1885,7 @@ export const mockCustomers: Customer[] = [
     "existingProducts": [
       {
         "name": "Savings Account",
-        "amount": 0,
+        "amount": 557587.34,
         "type": "savings"
       },
       {
@@ -1885,7 +1895,7 @@ export const mockCustomers: Customer[] = [
       },
       {
         "name": "ES-TM",
-        "amount": 0,
+        "amount": 3132356.89,
         "type": "investment"
       },
       {
@@ -1917,7 +1927,12 @@ export const mockCustomers: Customer[] = [
         "inflow": 348271,
         "outflow": 161972
       }
-    ]
+    ],
+    productRecommendations: [
+      { ...MOCK_PRODUCT_POOL[9], reason: "สร้างความมั่นคงทางการเงิน" },
+      { ...MOCK_PRODUCT_POOL[8], reason: "กระจายความเสี่ยงในการลงทุน" },
+      { ...MOCK_PRODUCT_POOL[3], reason: "สร้างความมั่นคงทางการเงิน" }
+    ],
   },
   {
     "id": "3550000017306",
@@ -1951,7 +1966,7 @@ export const mockCustomers: Customer[] = [
     "existingProducts": [
       {
         "name": "Deposit Account",
-        "amount": 0,
+        "amount": 614677.5,
         "type": "deposit"
       },
       {
@@ -1993,7 +2008,12 @@ export const mockCustomers: Customer[] = [
         "inflow": 225360,
         "outflow": 95544
       }
-    ]
+    ],
+    productRecommendations: [
+      { ...MOCK_PRODUCT_POOL[4], reason: "ลงทุนในสินทรัพย์ที่มีคุณภาพ" },
+      { ...MOCK_PRODUCT_POOL[2], reason: "สร้างความมั่นคงทางการเงิน" },
+      { ...MOCK_PRODUCT_POOL[0], reason: "ได้รับสิทธิประโยชน์ทางภาษี" }
+    ],
   },
   {
     "id": "3570000001634",
@@ -2027,7 +2047,7 @@ export const mockCustomers: Customer[] = [
     "existingProducts": [
       {
         "name": "Deposit Account",
-        "amount": 0,
+        "amount": 841047.29,
         "type": "deposit"
       },
       {
@@ -2064,7 +2084,12 @@ export const mockCustomers: Customer[] = [
         "inflow": 75878,
         "outflow": 37630
       }
-    ]
+    ],
+    productRecommendations: [
+      { ...MOCK_PRODUCT_POOL[7], reason: "เหมาะสำหรับการออมระยะยาว" },
+      { ...MOCK_PRODUCT_POOL[3], reason: "กระจายความเสี่ยงในการลงทุน" },
+      { ...MOCK_PRODUCT_POOL[4], reason: "เพื่อเป็นหลักประกันในอนาคต" }
+    ],
   },
   {
     "id": "3570000022893",
@@ -2098,7 +2123,7 @@ export const mockCustomers: Customer[] = [
     "existingProducts": [
       {
         "name": "Savings Account",
-        "amount": 0,
+        "amount": 384768.38,
         "type": "savings"
       },
       {
@@ -2108,7 +2133,7 @@ export const mockCustomers: Customer[] = [
       },
       {
         "name": "PRINCIPAL GHEALTH-A",
-        "amount": 0,
+        "amount": 1549670.34,
         "type": "investment"
       },
       {
@@ -2140,7 +2165,12 @@ export const mockCustomers: Customer[] = [
         "inflow": 50539,
         "outflow": 27599
       }
-    ]
+    ],
+    productRecommendations: [
+      { ...MOCK_PRODUCT_POOL[7], reason: "ลงทุนในสินทรัพย์ที่มีคุณภาพ" },
+      { ...MOCK_PRODUCT_POOL[4], reason: "เพื่อการเกษียณอายุอย่างมีความสุข" },
+      { ...MOCK_PRODUCT_POOL[3], reason: "เพื่อการเกษียณอายุอย่างมีความสุข" }
+    ],
   },
   {
     "id": "3550000003873",
@@ -2174,7 +2204,7 @@ export const mockCustomers: Customer[] = [
     "existingProducts": [
       {
         "name": "Deposit Account",
-        "amount": 0,
+        "amount": 410277.53,
         "type": "deposit"
       },
       {
@@ -2216,7 +2246,12 @@ export const mockCustomers: Customer[] = [
         "inflow": 137547,
         "outflow": 91903
       }
-    ]
+    ],
+    productRecommendations: [
+      { ...MOCK_PRODUCT_POOL[3], reason: "สร้างความมั่นคงทางการเงิน" },
+      { ...MOCK_PRODUCT_POOL[4], reason: "ลงทุนในสินทรัพย์ที่มีคุณภาพ" },
+      { ...MOCK_PRODUCT_POOL[0], reason: "เพิ่มสภาพคล่องทางการเงิน" }
+    ],
   },
   {
     "id": "3570000060735",
@@ -2250,7 +2285,7 @@ export const mockCustomers: Customer[] = [
     "existingProducts": [
       {
         "name": "Savings Account",
-        "amount": 0,
+        "amount": 386528.11,
         "type": "savings"
       },
       {
@@ -2292,7 +2327,12 @@ export const mockCustomers: Customer[] = [
         "inflow": 96513,
         "outflow": 44012
       }
-    ]
+    ],
+    productRecommendations: [
+      { ...MOCK_PRODUCT_POOL[11], reason: "สร้างความมั่นคงทางการเงิน" },
+      { ...MOCK_PRODUCT_POOL[9], reason: "สร้างความมั่นคงทางการเงิน" },
+      { ...MOCK_PRODUCT_POOL[1], reason: "สร้างความมั่นคงทางการเงิน" }
+    ],
   },
   {
     "id": "3500000016598",
@@ -2326,7 +2366,7 @@ export const mockCustomers: Customer[] = [
     "existingProducts": [
       {
         "name": "Savings Account",
-        "amount": 0,
+        "amount": 401566.39,
         "type": "savings"
       },
       {
@@ -2368,7 +2408,12 @@ export const mockCustomers: Customer[] = [
         "inflow": 95088,
         "outflow": 61617
       }
-    ]
+    ],
+    productRecommendations: [
+      { ...MOCK_PRODUCT_POOL[1], reason: "สร้างความมั่นคงทางการเงิน" },
+      { ...MOCK_PRODUCT_POOL[9], reason: "คุ้มครองชีวิตและทรัพย์สิน" },
+      { ...MOCK_PRODUCT_POOL[10], reason: "เพื่อการเกษียณอายุอย่างมีความสุข" }
+    ],
   },
   {
     "id": "3550000026263",
@@ -2402,7 +2447,7 @@ export const mockCustomers: Customer[] = [
     "existingProducts": [
       {
         "name": "Deposit Account",
-        "amount": 0,
+        "amount": 1486145.09,
         "type": "deposit"
       },
       {
@@ -2444,7 +2489,12 @@ export const mockCustomers: Customer[] = [
         "inflow": 274323,
         "outflow": 121655
       }
-    ]
+    ],
+    productRecommendations: [
+      { ...MOCK_PRODUCT_POOL[8], reason: "เพิ่มสภาพคล่องทางการเงิน" },
+      { ...MOCK_PRODUCT_POOL[10], reason: "สร้างความมั่นคงทางการเงิน" },
+      { ...MOCK_PRODUCT_POOL[11], reason: "เหมาะสำหรับการออมระยะยาว" }
+    ],
   },
   {
     "id": "3520000000437",
@@ -2478,7 +2528,7 @@ export const mockCustomers: Customer[] = [
     "existingProducts": [
       {
         "name": "Savings Account",
-        "amount": 0,
+        "amount": 297266.14,
         "type": "savings"
       },
       {
@@ -2520,7 +2570,12 @@ export const mockCustomers: Customer[] = [
         "inflow": 75244,
         "outflow": 40030
       }
-    ]
+    ],
+    productRecommendations: [
+      { ...MOCK_PRODUCT_POOL[6], reason: "เพื่อเพิ่มโอกาสในการรับผลตอบแทนที่สูงขึ้น" },
+      { ...MOCK_PRODUCT_POOL[4], reason: "ได้รับสิทธิประโยชน์ทางภาษี" },
+      { ...MOCK_PRODUCT_POOL[9], reason: "ลงทุนในสินทรัพย์ที่มีคุณภาพ" }
+    ],
   },
   {
     "id": "3520000018554",
@@ -2554,7 +2609,7 @@ export const mockCustomers: Customer[] = [
     "existingProducts": [
       {
         "name": "Deposit Account",
-        "amount": 0,
+        "amount": 680322.32,
         "type": "deposit"
       },
       {
@@ -2564,7 +2619,7 @@ export const mockCustomers: Customer[] = [
       },
       {
         "name": "PRINCIPAL FIRMF",
-        "amount": 0,
+        "amount": 5174816.68,
         "type": "investment"
       },
       {
@@ -2596,7 +2651,12 @@ export const mockCustomers: Customer[] = [
         "inflow": 337244,
         "outflow": 146027
       }
-    ]
+    ],
+    productRecommendations: [
+      { ...MOCK_PRODUCT_POOL[8], reason: "กระจายความเสี่ยงในการลงทุน" },
+      { ...MOCK_PRODUCT_POOL[0], reason: "เพิ่มสภาพคล่องทางการเงิน" },
+      { ...MOCK_PRODUCT_POOL[2], reason: "เพื่อการเกษียณอายุอย่างมีความสุข" }
+    ],
   },
   {
     "id": "3590000001308",
@@ -2630,7 +2690,7 @@ export const mockCustomers: Customer[] = [
     "existingProducts": [
       {
         "name": "Deposit Account",
-        "amount": 0,
+        "amount": 2935322.24,
         "type": "deposit"
       },
       {
@@ -2640,7 +2700,7 @@ export const mockCustomers: Customer[] = [
       },
       {
         "name": "ABCA-A",
-        "amount": 0,
+        "amount": 25956448.04,
         "type": "investment"
       },
       {
@@ -2672,7 +2732,12 @@ export const mockCustomers: Customer[] = [
         "inflow": 405553,
         "outflow": 174944
       }
-    ]
+    ],
+    productRecommendations: [
+      { ...MOCK_PRODUCT_POOL[2], reason: "ได้รับสิทธิประโยชน์ทางภาษี" },
+      { ...MOCK_PRODUCT_POOL[3], reason: "ได้รับสิทธิประโยชน์ทางภาษี" },
+      { ...MOCK_PRODUCT_POOL[0], reason: "เพื่อเป็นหลักประกันในอนาคต" }
+    ],
   },
   {
     "id": "3570000029399",
@@ -2706,7 +2771,7 @@ export const mockCustomers: Customer[] = [
     "existingProducts": [
       {
         "name": "Savings Account",
-        "amount": 0,
+        "amount": 328928.9,
         "type": "savings"
       },
       {
@@ -2748,7 +2813,12 @@ export const mockCustomers: Customer[] = [
         "inflow": 85847,
         "outflow": 39830
       }
-    ]
+    ],
+    productRecommendations: [
+      { ...MOCK_PRODUCT_POOL[4], reason: "กระจายความเสี่ยงในการลงทุน" },
+      { ...MOCK_PRODUCT_POOL[9], reason: "กระจายความเสี่ยงในการลงทุน" },
+      { ...MOCK_PRODUCT_POOL[2], reason: "กระจายความเสี่ยงในการลงทุน" }
+    ],
   },
   {
     "id": "3530000002077",
@@ -2782,7 +2852,7 @@ export const mockCustomers: Customer[] = [
     "existingProducts": [
       {
         "name": "Savings Account",
-        "amount": 0,
+        "amount": 592720.83,
         "type": "savings"
       },
       {
@@ -2824,7 +2894,12 @@ export const mockCustomers: Customer[] = [
         "inflow": 285668,
         "outflow": 122512
       }
-    ]
+    ],
+    productRecommendations: [
+      { ...MOCK_PRODUCT_POOL[2], reason: "กระจายความเสี่ยงในการลงทุน" },
+      { ...MOCK_PRODUCT_POOL[8], reason: "เพื่อการเกษียณอายุอย่างมีความสุข" },
+      { ...MOCK_PRODUCT_POOL[0], reason: "เพื่อเป็นหลักประกันในอนาคต" }
+    ],
   },
   {
     "id": "3500000035079",
@@ -2858,7 +2933,7 @@ export const mockCustomers: Customer[] = [
     "existingProducts": [
       {
         "name": "Savings Account",
-        "amount": 0,
+        "amount": 1258337.72,
         "type": "savings"
       },
       {
@@ -2900,7 +2975,12 @@ export const mockCustomers: Customer[] = [
         "inflow": 901779,
         "outflow": 522781
       }
-    ]
+    ],
+    productRecommendations: [
+      { ...MOCK_PRODUCT_POOL[1], reason: "เพื่อเพิ่มโอกาสในการรับผลตอบแทนที่สูงขึ้น" },
+      { ...MOCK_PRODUCT_POOL[2], reason: "เพื่อการเกษียณอายุอย่างมีความสุข" },
+      { ...MOCK_PRODUCT_POOL[3], reason: "ลงทุนในสินทรัพย์ที่มีคุณภาพ" }
+    ],
   },
   {
     "id": "3500000029837",
@@ -2934,7 +3014,7 @@ export const mockCustomers: Customer[] = [
     "existingProducts": [
       {
         "name": "Savings Account",
-        "amount": 0,
+        "amount": 681874.98,
         "type": "savings"
       },
       {
@@ -2976,7 +3056,12 @@ export const mockCustomers: Customer[] = [
         "inflow": 292499,
         "outflow": 172040
       }
-    ]
+    ],
+    productRecommendations: [
+      { ...MOCK_PRODUCT_POOL[8], reason: "เพื่อการเกษียณอายุอย่างมีความสุข" },
+      { ...MOCK_PRODUCT_POOL[0], reason: "เพิ่มสภาพคล่องทางการเงิน" },
+      { ...MOCK_PRODUCT_POOL[11], reason: "ลงทุนในสินทรัพย์ที่มีคุณภาพ" }
+    ],
   },
   {
     "id": "3520000020940",
@@ -3010,7 +3095,7 @@ export const mockCustomers: Customer[] = [
     "existingProducts": [
       {
         "name": "Deposit Account",
-        "amount": 0,
+        "amount": 936435.3,
         "type": "deposit"
       },
       {
@@ -3052,7 +3137,12 @@ export const mockCustomers: Customer[] = [
         "inflow": 467818,
         "outflow": 289462
       }
-    ]
+    ],
+    productRecommendations: [
+      { ...MOCK_PRODUCT_POOL[6], reason: "ลงทุนในสินทรัพย์ที่มีคุณภาพ" },
+      { ...MOCK_PRODUCT_POOL[1], reason: "ได้รับสิทธิประโยชน์ทางภาษี" },
+      { ...MOCK_PRODUCT_POOL[8], reason: "เพื่อการเกษียณอายุอย่างมีความสุข" }
+    ],
   },
   {
     "id": "3570000019627",
@@ -3086,7 +3176,7 @@ export const mockCustomers: Customer[] = [
     "existingProducts": [
       {
         "name": "Savings Account",
-        "amount": 0,
+        "amount": 421979.09,
         "type": "savings"
       },
       {
@@ -3096,7 +3186,7 @@ export const mockCustomers: Customer[] = [
       },
       {
         "name": "PRINCIPAL GQE-A",
-        "amount": 0,
+        "amount": 2077372.59,
         "type": "investment"
       },
       {
@@ -3128,7 +3218,12 @@ export const mockCustomers: Customer[] = [
         "inflow": 79691,
         "outflow": 42890
       }
-    ]
+    ],
+    productRecommendations: [
+      { ...MOCK_PRODUCT_POOL[3], reason: "เพื่อเป็นหลักประกันในอนาคต" },
+      { ...MOCK_PRODUCT_POOL[11], reason: "ลงทุนในสินทรัพย์ที่มีคุณภาพ" },
+      { ...MOCK_PRODUCT_POOL[10], reason: "ได้รับสิทธิประโยชน์ทางภาษี" }
+    ],
   },
   {
     "id": "3520000011010",
@@ -3162,7 +3257,7 @@ export const mockCustomers: Customer[] = [
     "existingProducts": [
       {
         "name": "Savings Account",
-        "amount": 0,
+        "amount": 1140369.47,
         "type": "savings"
       },
       {
@@ -3172,7 +3267,7 @@ export const mockCustomers: Customer[] = [
       },
       {
         "name": "PRINCIPAL TREASURY",
-        "amount": 0,
+        "amount": 4259649.02,
         "type": "investment"
       },
       {
@@ -3204,7 +3299,12 @@ export const mockCustomers: Customer[] = [
         "inflow": 359040,
         "outflow": 210698
       }
-    ]
+    ],
+    productRecommendations: [
+      { ...MOCK_PRODUCT_POOL[8], reason: "เพื่อเป็นหลักประกันในอนาคต" },
+      { ...MOCK_PRODUCT_POOL[4], reason: "เหมาะสำหรับการออมระยะยาว" },
+      { ...MOCK_PRODUCT_POOL[5], reason: "เพื่อเพิ่มโอกาสในการรับผลตอบแทนที่สูงขึ้น" }
+    ],
   }
 ];
 

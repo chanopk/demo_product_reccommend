@@ -1,6 +1,8 @@
-import { motion } from 'framer-motion';
+import { useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 import { TrendingUp, Lightbulb } from 'lucide-react';
 import { ProductComparison } from '@/components/ProductComparison';
+import { PortSimulation } from '@/components/PortSimulation';
 import { ScenarioCard } from '@/components/ScenarioCard';
 import type { Product, Scenario } from '@/types';
 
@@ -11,7 +13,19 @@ interface ProductSectionProps {
 }
 
 export function ProductSection({ products, scenarios }: ProductSectionProps) {
+  const [selectedProductIds, setSelectedProductIds] = useState<string[]>([]);
 
+  const handleToggleProduct = (productId: string) => {
+    setSelectedProductIds((prev) =>
+      prev.includes(productId)
+        ? prev.filter((id) => id !== productId)
+        : [...prev, productId]
+    );
+  };
+
+  const selectedProducts = products.filter((p) =>
+    selectedProductIds.includes(p.id)
+  );
 
   return (
     <section className="py-12 px-4 bg-[#F7FAFC]">
@@ -36,9 +50,21 @@ export function ProductSection({ products, scenarios }: ProductSectionProps) {
 
         {/* Product Comparison Table */}
         <div className="mb-8">
-          <ProductComparison products={products} />
+          <ProductComparison
+            products={products}
+            selectedProductIds={selectedProductIds}
+            onToggleProduct={handleToggleProduct}
+          />
         </div>
 
+        {/* Port Simulation - Shows when products are selected */}
+        <AnimatePresence>
+          {selectedProducts.length > 0 && (
+            <div className="mb-12">
+              <PortSimulation selectedProducts={selectedProducts} />
+            </div>
+          )}
+        </AnimatePresence>
 
 
         {/* Scenario-based Recommendations */}

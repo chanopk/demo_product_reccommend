@@ -10,14 +10,16 @@ import {
   TableRow,
 } from '@/components/ui/table';
 import { Badge } from '@/components/ui/badge';
-
+import { Checkbox } from '@/components/ui/checkbox';
 
 
 interface ProductComparisonProps {
   products: Product[];
+  selectedProductIds: string[];
+  onToggleProduct: (productId: string) => void;
 }
 
-export function ProductComparison({ products }: ProductComparisonProps) {
+export function ProductComparison({ products, selectedProductIds, onToggleProduct }: ProductComparisonProps) {
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -73,6 +75,7 @@ export function ProductComparison({ products }: ProductComparisonProps) {
         <Table>
           <TableHeader>
             <TableRow className="bg-[#F7FAFC]">
+              <TableHead className="w-[50px]"></TableHead>
               <TableHead className="font-semibold text-[#1A365D]">Product</TableHead>
               <TableHead className="font-semibold text-[#1A365D]">Duration</TableHead>
 
@@ -84,58 +87,69 @@ export function ProductComparison({ products }: ProductComparisonProps) {
             </TableRow>
           </TableHeader>
           <TableBody>
-            {products.map((product) => (
-              <motion.tr
-                key={product.id}
-                variants={rowVariants}
-                whileHover={{ backgroundColor: '#F7FAFC' }}
-                className={`transition-colors duration-200 ${product.recommended ? 'bg-[#FFF5F5]' : ''
-                  }`}
-              >
-                <TableCell>
-                  <div>
-                    <p className="font-semibold text-[#1A202C]">{product.name}</p>
-                    <p className="text-xs text-[#718096] mt-1">{product.description}</p>
-                  </div>
-                </TableCell>
-                <TableCell>
-                  <div className="flex items-center gap-2">
-                    <Clock className="w-4 h-4 text-[#718096]" />
-                    <span className="text-sm">{product.duration}</span>
-                  </div>
-                </TableCell>
+            {products.map((product) => {
+              const isSelected = selectedProductIds.includes(product.id);
+              return (
+                <motion.tr
+                  key={product.id}
+                  variants={rowVariants}
+                  whileHover={{ backgroundColor: '#F7FAFC' }}
+                  className={`transition-colors duration-200 ${isSelected ? 'bg-blue-50/50' : product.recommended ? 'bg-[#FFF5F5]/50' : ''
+                    }`}
+                  onClick={() => onToggleProduct(product.id)}
+                  style={{ cursor: 'pointer' }}
+                >
+                  <TableCell onClick={(e) => e.stopPropagation()}>
+                    <Checkbox
+                      checked={isSelected}
+                      onCheckedChange={() => onToggleProduct(product.id)}
+                    />
+                  </TableCell>
+                  <TableCell>
+                    <div>
+                      <p className="font-semibold text-[#1A202C]">{product.name}</p>
+                      <p className="text-xs text-[#718096] mt-1">{product.description}</p>
+                    </div>
+                  </TableCell>
+                  <TableCell>
+                    <div className="flex items-center gap-2">
+                      <Clock className="w-4 h-4 text-[#718096]" />
+                      <span className="text-sm">{product.duration}</span>
+                    </div>
+                  </TableCell>
 
-                <TableCell>
-                  <div className="flex items-center gap-2">
-                    <TrendingUp className="w-4 h-4 text-[#48BB78]" />
-                    <span className="font-semibold text-[#48BB78]">{product.interestRate}%</span>
-                  </div>
-                </TableCell>
-                <TableCell>
-                  <div className="flex flex-col gap-2">
-                    {product.recommended && product.reason && (
-                      <p className="text-sm text-gray-600 leading-relaxed">
-                        {product.reason}
-                      </p>
-                    )}
-                  </div>
-                </TableCell>
-                <TableCell>
-                  <div className="flex items-center gap-2">
-                    <DollarSign className="w-4 h-4 text-[#718096]" />
-                    <span className="text-sm">
-                      {product.minInvestment.toLocaleString()} THB
-                    </span>
-                  </div>
-                </TableCell>
-                <TableCell>
-                  <Badge className={`${getRiskColor(product.riskLevel)} capitalize`}>
-                    {product.riskLevel}
-                  </Badge>
-                </TableCell>
+                  <TableCell>
+                    <div className="flex items-center gap-2">
+                      <TrendingUp className="w-4 h-4 text-[#48BB78]" />
+                      <span className="font-semibold text-[#48BB78]">{product.interestRate}%</span>
+                    </div>
+                  </TableCell>
+                  <TableCell>
+                    <div className="flex flex-col gap-2">
+                      {product.recommended && product.reason && (
+                        <p className="text-sm text-gray-600 leading-relaxed">
+                          {product.reason}
+                        </p>
+                      )}
+                    </div>
+                  </TableCell>
+                  <TableCell>
+                    <div className="flex items-center gap-2">
+                      <DollarSign className="w-4 h-4 text-[#718096]" />
+                      <span className="text-sm">
+                        {product.minInvestment.toLocaleString()} THB
+                      </span>
+                    </div>
+                  </TableCell>
+                  <TableCell>
+                    <Badge className={`${getRiskColor(product.riskLevel)} capitalize`}>
+                      {product.riskLevel}
+                    </Badge>
+                  </TableCell>
 
-              </motion.tr>
-            ))}
+                </motion.tr>
+              );
+            })}
           </TableBody>
         </Table>
       </div>
