@@ -126,7 +126,7 @@ function App() {
           >
             <div className="max-w-md mx-auto">
               <img
-                src="/images/banking-hero.jpg"
+                src={`${import.meta.env.BASE_URL}images/banking-hero.jpg`}
                 alt="Banking illustration"
                 className="w-full rounded-xl shadow-lg mb-6"
               />

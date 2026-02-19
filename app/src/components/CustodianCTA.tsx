@@ -24,7 +24,7 @@ export function CustodianCTA({ onAction }: CustodianCTAProps) {
     >
       {/* Gradient Background */}
       <div className="absolute inset-0 bg-gradient-to-br from-[#1A365D] via-[#2C5282] to-[#E31837]" />
-      
+
       {/* Animated gradient overlay */}
       <motion.div
         animate={{
@@ -71,8 +71,8 @@ export function CustodianCTA({ onAction }: CustodianCTAProps) {
               transition={{ delay: 0.5, duration: 0.5 }}
               className="text-white/80 mb-6 leading-relaxed"
             >
-              Secure your investments with our professional custodian services. 
-              Enjoy peace of mind with regulatory-compliant asset protection and 
+              Secure your investments with our professional custodian services.
+              Enjoy peace of mind with regulatory-compliant asset protection and
               comprehensive portfolio management.
             </motion.p>
 
@@ -130,12 +130,12 @@ export function CustodianCTA({ onAction }: CustodianCTAProps) {
           >
             <div className="relative">
               <img
-                src="/images/investment-growth.jpg"
+                src={`${import.meta.env.BASE_URL}images/investment-growth.jpg`}
                 alt="Investment Growth"
                 className="rounded-xl shadow-2xl"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#1A365D]/50 to-transparent rounded-xl" />
-              
+
               {/* Floating stats */}
               <motion.div
                 initial={{ opacity: 0, y: 20 }}

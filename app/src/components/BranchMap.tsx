@@ -35,11 +35,11 @@ export function BranchMap({ branches }: BranchMapProps) {
         {/* Map Visualization */}
         <div className="relative h-80 md:h-auto bg-gradient-to-br from-[#EDF2F7] to-[#E2E8F0] overflow-hidden">
           <img
-            src="/images/branch-map.jpg"
+            src={`${import.meta.env.BASE_URL}images/branch-map.jpg`}
             alt="Branch locations"
             className="w-full h-full object-cover opacity-90"
           />
-          
+
           {/* Overlay pins */}
           {branches.map((branch, index) => (
             <motion.button
@@ -55,27 +55,24 @@ export function BranchMap({ branches }: BranchMapProps) {
               }}
             >
               <div
-                className={`relative ${
-                  selectedBranch?.id === branch.id ? 'z-10' : 'z-0'
-                }`}
+                className={`relative ${selectedBranch?.id === branch.id ? 'z-10' : 'z-0'
+                  }`}
               >
                 <motion.div
                   animate={{
                     scale: selectedBranch?.id === branch.id ? [1, 1.2, 1] : 1,
                   }}
                   transition={{ duration: 1.5, repeat: Infinity }}
-                  className={`w-4 h-4 rounded-full ${
-                    selectedBranch?.id === branch.id
+                  className={`w-4 h-4 rounded-full ${selectedBranch?.id === branch.id
                       ? 'bg-[#E31837]'
                       : 'bg-[#1A365D]'
-                  }`}
+                    }`}
                 />
                 <div
-                  className={`absolute inset-0 w-4 h-4 rounded-full ${
-                    selectedBranch?.id === branch.id
+                  className={`absolute inset-0 w-4 h-4 rounded-full ${selectedBranch?.id === branch.id
                       ? 'bg-[#E31837]'
                       : 'bg-[#1A365D]'
-                  } opacity-30 animate-ping`}
+                    } opacity-30 animate-ping`}
                 />
               </div>
             </motion.button>
@@ -105,23 +102,21 @@ export function BranchMap({ branches }: BranchMapProps) {
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: 0.2 + index * 0.1 }}
                 onClick={() => setSelectedBranch(branch)}
-                className={`p-4 rounded-lg cursor-pointer transition-all duration-200 ${
-                  selectedBranch?.id === branch.id
+                className={`p-4 rounded-lg cursor-pointer transition-all duration-200 ${selectedBranch?.id === branch.id
                     ? 'bg-[#FFF5F5] border-2 border-[#E31837]'
                     : 'bg-[#F7FAFC] border-2 border-transparent hover:bg-[#EDF2F7]'
-                }`}
+                  }`}
               >
                 <div className="flex items-start justify-between mb-2">
                   <h4 className="font-semibold text-[#1A202C]">{branch.name}</h4>
                   <Badge
                     variant="secondary"
-                    className={`text-xs ${
-                      branch.distance <= 1
+                    className={`text-xs ${branch.distance <= 1
                         ? 'bg-[#C6F6D5] text-[#276749]'
                         : branch.distance <= 3
-                        ? 'bg-[#FEEBC8] text-[#C05621]'
-                        : 'bg-[#E2E8F0] text-[#4A5568]'
-                    }`}
+                          ? 'bg-[#FEEBC8] text-[#C05621]'
+                          : 'bg-[#E2E8F0] text-[#4A5568]'
+                      }`}
                   >
                     {branch.distance} km
                   </Badge>
